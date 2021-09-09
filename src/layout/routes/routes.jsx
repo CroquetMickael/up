@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import App from "../../App";
+import { UploadReplay } from "../../components/UploadReplay/UploadReplay";
 import { UserContextProvider } from "../../context/UserContext";
 import { Activate } from "../../pages/Activate/Activate";
 
@@ -11,9 +12,11 @@ const Routes = () => (
         <Route path="/activate">
           <Activate />
         </Route>
-        <Route path="/">
-          <App />
-        </Route>
+        <UploadReplay>
+          <Route path="/">
+            <App />
+          </Route>
+        </UploadReplay>
       </Switch>
     </UserContextProvider>
   </BrowserRouter>
