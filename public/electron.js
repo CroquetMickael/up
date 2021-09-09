@@ -1,6 +1,19 @@
+const {
+  default: installExtension,
+  REACT_DEVELOPER_TOOLS,
+} = require("electron-devtools-installer");
+
 const electron = require("electron");
 // Module to control application life.
 const app = electron.app;
+
+
+app.whenReady().then(() => {
+  installExtension(REACT_DEVELOPER_TOOLS)
+    .then((name) => console.log(`Added Extension:  ${name}`))
+    .catch((err) => console.log("An error occurred: ", err));
+});
+
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
 
