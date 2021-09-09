@@ -1,8 +1,8 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { requestStatus, useAsync } from "./useAsync";
-const apiURL = "https://ballchasing.com";
+const apiURL = "https://ballchasing.com/api";
 
-const customFetch = async (URL: string, init: RequestInit) => {
+const customFetch = async (URL, init, setIsSuccess) => {
   const authHeader = {
     Authorization: process.env.VITE_API_KEY,
   };
@@ -23,24 +23,27 @@ const customFetch = async (URL: string, init: RequestInit) => {
   }
 
   if (response.ok) {
+    setIsSuccess(true);
     return { inError: false, data: json, httpCode: response.status };
   } else {
+    setIsSuccess(false);
     return { inError: true, error: json, httpCode: response.status };
   }
 };
 
 const useFetch = () => {
-  const { run, data, error, status, httpCode } = useAsync();
+  const [isSuccess, setIsSuccess] = useState();
+  const { run, data, status, httpCode, resetFetchState } = useAsync();
 
   const get = useCallback(
-    (URL: string, init: RequestInit | undefined) =>
+    (URL, init) =>
       run(
         customFetch(`${URL}`, {
           method: "GET",
           ...init,
-        })
+        }, setIsSuccess)
       ),
-    [run, customFetch]
+    [run]
   );
 
   const isResolved = status === requestStatus.resolved;
@@ -48,7 +51,17 @@ const useFetch = () => {
   const isLoading = status === requestStatus.pending;
   const isIdle = status === requestStatus.idle;
 
-  return { get, data, isResolved, hasError, httpCode, isLoading, isIdle };
+  return {
+    get,
+    data,
+    isResolved,
+    isSuccess,
+    hasError,
+    httpCode,
+    isLoading,
+    isIdle,
+    resetFetchState,
+  };
 };
 
 export { useFetch };
