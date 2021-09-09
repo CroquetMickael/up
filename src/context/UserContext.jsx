@@ -1,22 +1,20 @@
-import { stringify } from "postcss";
-import React, { createContext, useContext, useMemo, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 import { useHistory } from "react-router";
 import { useEffect } from "react/cjs/react.development";
-import StormDb from "stormdb";
+import { useDB } from "../hooks/useDB";
 
 const UserContext = createContext();
 
 const UserContextProvider = ({ children }) => {
   const { push } = useHistory();
-  const engine = useMemo(() => new StormDb.browserEngine("up"), []);
-  const db = useMemo(() => new StormDb(engine), [engine]);
-  const [user, setUser] = useState(db.get("user").value());
+  const { DBGet } = useDB();
+  const [user, setUser] = useState(DBGet("user").value());
 
   useEffect(() => {
     if (!user) {
       push("/activate");
     }
-  }, [db, push, user]);
+  }, [push, user]);
 
   return (
     <UserContext.Provider value={{ user, setUser }}>

@@ -10,7 +10,7 @@ const Activate = () => {
   const { push } = useHistory();
   const { get, data, isResolved, hasError, resetFetchState, isSuccess } =
     useFetch();
-  const { db } = useDB();
+  const { DBSet, DBSave } = useDB();
   const { setUser } = useUser();
 
   useEffect(() => {
@@ -20,23 +20,15 @@ const Activate = () => {
         id: data?.steam_id,
         apiKey,
       };
-      db.set("user", userData).save();
+      DBSet("user", userData);
+      DBSave();
       setUser(userData);
       resetFetchState();
     }
     if (hasError) {
       console.log("error");
     }
-  }, [
-    apiKey,
-    data?.name,
-    data?.steam_id,
-    db,
-    hasError,
-    isResolved,
-    resetFetchState,
-    setUser,
-  ]);
+  }, [DBSave, DBSet, apiKey, data?.name, data?.steam_id, hasError, isResolved, resetFetchState, setUser]);
 
   const getUserInfo = () => {
     get("/");
