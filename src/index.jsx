@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./assets/css/index.css";
 import { worker } from "./__mocks__/browser";
-import App from "./App";
+import { Routes } from "./layout/routes/routes";
 
 if (process.env.NODE_ENV === "development") {
   worker.start();
@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === "development") {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Routes />
   </React.StrictMode>,
   document.getElementById("root")
 );
