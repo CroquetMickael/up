@@ -48,7 +48,9 @@ function useAsync() {
       dispatch({ type: "pending", ...defaultReduceState });
       promise.then(
         (result) => {
-          dispatch({ ...result, promiseState: "RESOLVED" });
+          const isError = result.inError;
+          delete result.inError;
+          dispatch({ ...result, promiseState: isError ? "ERROR" : "RESOLVED" });
         },
         (error) => {
           dispatch({
@@ -62,12 +64,17 @@ function useAsync() {
     [dispatch]
   );
 
+  const resetFetchState = () => {
+    dispatch({ status: requestStatus.idle, ...defaultReduceState });
+  };
+
   return {
     error,
     status,
     data,
     run,
     httpCode,
+    resetFetchState,
   };
 }
 
