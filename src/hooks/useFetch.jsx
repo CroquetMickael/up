@@ -4,11 +4,12 @@ import { requestStatus, useAsync } from "./useAsync";
 
 export const apiURL = "https://ballchasing.com/api";
 
-const customFetch = async (URL, init, setIsSuccess, apiKey) => {
+const customFetch = async (URL, init, setIsSuccess, apiKey, isNotFromAPI) => {
+  const apiUrlUsed = isNotFromAPI ? "https://ballchasing.com" : apiURL;
   const authHeader = {
     Authorization: apiKey,
   };
-  const response = await fetch(`${apiURL}${URL}`, {
+  const response = await fetch(`${apiUrlUsed}${URL}`, {
     ...init,
     headers: {
       ...init?.headers,
@@ -39,7 +40,7 @@ const useFetch = () => {
   const { user } = useUser();
 
   const get = useCallback(
-    (URL, init) =>
+    (URL, init, isNotFromAPI) =>
       run(
         customFetch(
           `${URL}`,
@@ -48,14 +49,15 @@ const useFetch = () => {
             ...init,
           },
           setIsSuccess,
-          user?.apiKey
+          user?.apiKey,
+          isNotFromAPI
         )
       ),
     [run, user?.apiKey]
   );
 
   const post = useCallback(
-    (URL, init) =>
+    (URL, init, isNotFromAPI) =>
       run(
         customFetch(
           `${URL}`,
@@ -64,7 +66,8 @@ const useFetch = () => {
             ...init,
           },
           setIsSuccess,
-          user?.apiKey
+          user?.apiKey,
+          isNotFromAPI
         )
       ),
     [run, user?.apiKey]

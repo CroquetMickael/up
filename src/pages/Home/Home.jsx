@@ -1,11 +1,14 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, { useMemo } from "react";
 import "./Home.css";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect, useState } from "react/cjs/react.development";
 import { useUser } from "../../context/UserContext";
 import { useFetch } from "../../hooks/useFetch";
 import { useDB } from "../../hooks/useDB";
 import Bottleneck from "bottleneck";
+import { getReplaysData, UpdateReplaysData } from "./Home.service";
+import { useReplayData } from "../../hooks/useReplayData";
+import { BoostSection } from "./Section/BoostSection";
+import { MovementSection } from "./Section/MovementSection";
 
 function Home() {
   const { user, isFirstLoading, setIsFirstLoading } = useUser();
@@ -15,71 +18,78 @@ function Home() {
     data: replayData,
     isResolved: replayResolved,
   } = useFetch();
+  const { get: getRanksData, data: rankData } = useFetch();
   const { DBSet, DBSave, DBGet } = useDB();
+  const [datas, setDatas] = useState(DBGet("replaysDatas").value());
+
+  const { boost, movement } = useReplayData({ user, games: datas });
+
+  const limiter = useMemo(
+    () =>
+      new Bottleneck({
+        minTime: 500,
+        maxConcurrent: 1,
+        reservoir: 10,
+        reservoirRefreshInterval: 1000,
+        reservoirRefreshAmount: 2,
+        trackDoneStatus: true,
+      }),
+    []
+  );
 
   useEffect(() => {
     get(`/replays?player-id=steam:${user?.id}`);
   }, [get, user?.id]);
 
   useEffect(() => {
-    const limiter = new Bottleneck({
-      minTime: 500,
-      maxConcurrent: 1,
-      reservoir: 10,
-      reservoirRefreshInterval: 1000,
-      reservoirRefreshAmount: 2,
-    });
-
     if (isResolved && isFirstLoading) {
-      const games = data?.list.splice(0, 10);
-      const ids = games.map((game) => game.id);
-      DBSet("gamesId", ids);
-      DBSave();
-      setIsFirstLoading(false);
-      ids.forEach((id) => {
-        limiter.schedule(() => getReplayData(`/replays/${id}`));
+      getReplaysData({
+        data,
+        getReplayData,
+        DBSave,
+        DBSet,
+        limiter,
+        setIsFirstLoading,
       });
     }
   }, [
     DBSave,
     DBSet,
-    data?.list,
+    data,
     getReplayData,
     isFirstLoading,
     isResolved,
+    limiter,
     setIsFirstLoading,
   ]);
 
   useEffect(() => {
+    getRanksData(
+      "/population/average/stats?group=grank&min-rank=0&max-rank=0",
+      {},
+      true
+    );
+  }, [getRanksData]);
+
+  useEffect(() => {
     const replaysData = DBGet("replaysDatas").value() || [];
     if (replayResolved) {
-      replaysData.push(replayData);
-      const removeDuplicateReplaysDatas = replaysData.filter(
-        (replay, index, array) =>
-          array.findIndex((t) => t.id === replay.id) === index
-      );
-      DBSet("replaysDatas", removeDuplicateReplaysDatas);
-      DBSave();
+      UpdateReplaysData({ replayData, replaysData, DBSet, DBSave });
+      const doneLimiter = limiter.counts().DONE === 10;
+      const maxReplayFound = replaysData.length === 10;
+      if (doneLimiter && maxReplayFound) {
+        setDatas(replaysData);
+      }
     }
-  }, [DBGet, DBSave, DBSet, replayData, replayResolved]);
+  }, [DBGet, DBSave, DBSet, datas, limiter, replayData, replayResolved]);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Toto <code>src/App.jsx</code> and save to reload with viteJS.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="z-10 relative">
+        <BoostSection boost={boost} rankData={rankData} />
+        <MovementSection movement={movement} rankData={rankData} />
+      </div>
+    </>
   );
 }
 
