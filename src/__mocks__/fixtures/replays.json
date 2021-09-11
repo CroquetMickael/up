@@ -1,0 +1,5057 @@
+{
+    "count": 53,
+    "list": [
+        {
+            "id": "2554927f-4d07-41c4-aa0b-fe972ef3e33e",
+            "link": "https://ballchasing.com/api/replays/2554927f-4d07-41c4-aa0b-fe972ef3e33e",
+            "rocket_league_id": "BA8ABB424C6B397BFBCDCCBD755C38AA",
+            "replay_title": "BA8ABB424C6B397BFBCDCCBD755C38AA",
+            "recorder": "Haze",
+            "map_code": "cs_day_p",
+            "map_name": "Champions Field (Day)",
+            "playlist_id": "unranked-doubles",
+            "playlist_name": "Unranked Doubles",
+            "duration": 352,
+            "overtime": false,
+            "season": 3,
+            "season_type": "free2play",
+            "date": "2021-04-09T20:53:55+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-09T20:54:19.484677+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 352.606,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "mvp": true,
+                        "score": 486
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 352.606,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 449
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 352.606,
+                        "name": "ErGun",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198120729333"
+                        },
+                        "score": 486
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 352.606,
+                        "name": "Le VaT",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198254798325"
+                        },
+                        "score": 308
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fc7fc12a-e34f-4c9c-8491-335d5cd7d0b7",
+            "link": "https://ballchasing.com/api/replays/fc7fc12a-e34f-4c9c-8491-335d5cd7d0b7",
+            "rocket_league_id": "C8902E9443A6405CB4E6E8BB0AB69349",
+            "replay_title": "C8902E9443A6405CB4E6E8BB0AB69349",
+            "recorder": "Haze",
+            "map_code": "neotokyo_standard_p",
+            "map_name": "Neo Tokyo (Standard)",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 376,
+            "overtime": false,
+            "season": 3,
+            "season_type": "free2play",
+            "date": "2021-04-08T23:14:16+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-08T23:14:51.429917+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 376.221,
+                        "name": "Maboroshi^-^",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198117641067"
+                        },
+                        "score": 635
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 376.221,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 212
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 376.221,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 162
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 376.221,
+                        "name": "El Patito Loquito",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198106830426"
+                        },
+                        "mvp": true,
+                        "score": 482
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 376.221,
+                        "name": "Sparx",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197988120905"
+                        },
+                        "score": 438
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 376.221,
+                        "name": "Drole",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198162411270"
+                        },
+                        "score": 194
+                    }
+                ]
+            }
+        },
+        {
+            "id": "6fe87e53-7a05-4fce-9d0f-04e3471d1275",
+            "link": "https://ballchasing.com/api/replays/6fe87e53-7a05-4fce-9d0f-04e3471d1275",
+            "rocket_league_id": "CD09E0D041C1152C957CD08D7B63B866",
+            "replay_title": "CD09E0D041C1152C957CD08D7B63B866",
+            "recorder": "Haze",
+            "map_code": "stadium_race_day_p",
+            "map_name": "DFH Stadium (Circuit)",
+            "playlist_id": "unranked-doubles",
+            "playlist_name": "Unranked Doubles",
+            "duration": 374,
+            "overtime": true,
+            "overtime_seconds": 20,
+            "season": 3,
+            "season_type": "free2play",
+            "date": "2021-04-08T21:45:07+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-08T21:46:02.54532+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 374.679,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 436
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 374.679,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 260
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 374.679,
+                        "name": "JanniG9",
+                        "id": {
+                            "platform": "epic",
+                            "id": "96f004b46c71486f8a35520d61012609"
+                        },
+                        "mvp": true,
+                        "score": 485
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 374.679,
+                        "name": "Sisitas",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198349354084"
+                        },
+                        "score": 451
+                    }
+                ]
+            }
+        },
+        {
+            "id": "b75b6cce-59c8-4c80-b576-b3a45f7bde08",
+            "link": "https://ballchasing.com/api/replays/b75b6cce-59c8-4c80-b576-b3a45f7bde08",
+            "rocket_league_id": "7FE6F57C49A1B194FF7400A0FC824133",
+            "replay_title": "7FE6F57C49A1B194FF7400A0FC824133",
+            "recorder": "Haze",
+            "map_code": "utopiastadium_p",
+            "map_name": "Utopia Coliseum",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 416,
+            "overtime": true,
+            "overtime_seconds": 84,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-06T23:13:46+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-06T23:14:05.944916+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 416.841,
+                        "name": "XxUwuSwagOwOxX",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f90e0359530d45f889b278fb1baefb62"
+                        },
+                        "mvp": true,
+                        "score": 434
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 416.841,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 277
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 416.841,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 230
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 416.841,
+                        "name": "FURAN",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197966278373"
+                        },
+                        "score": 364
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 416.841,
+                        "name": "GrilledBear087",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197964532630"
+                        },
+                        "score": 284
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 416.841,
+                        "name": "Gnomerdoom",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198073288054"
+                        },
+                        "score": 181
+                    },
+                    {
+                        "start_time": -1,
+                        "end_time": 0,
+                        "name": "Buzz",
+                        "id": {},
+                        "score": 0
+                    }
+                ]
+            }
+        },
+        {
+            "id": "9a072c8c-7aac-4cdc-9415-6a8c406cdc02",
+            "link": "https://ballchasing.com/api/replays/9a072c8c-7aac-4cdc-9415-6a8c406cdc02",
+            "rocket_league_id": "19F09DB8436AAA0F1B5131B4A3A421DF",
+            "replay_title": "19F09DB8436AAA0F1B5131B4A3A421DF",
+            "recorder": "Haze",
+            "map_code": "neotokyo_standard_p",
+            "map_name": "Neo Tokyo (Standard)",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 373,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-06T21:45:06+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-06T21:45:25.408446+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 5,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 373.082,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "mvp": true,
+                        "score": 687
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 373.082,
+                        "name": "XxUwuSwagOwOxX",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f90e0359530d45f889b278fb1baefb62"
+                        },
+                        "score": 344
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 373.082,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 247
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 373.082,
+                        "name": "Dranoxx",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198070900969"
+                        },
+                        "score": 304
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 373.082,
+                        "name": "Kapitein orzhofa",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198086637858"
+                        },
+                        "score": 302
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 373.082,
+                        "name": "GanjaMan (%_%)",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198174118214"
+                        },
+                        "score": 284
+                    }
+                ]
+            }
+        },
+        {
+            "id": "b84e8575-fcb7-45c7-a9d5-864ca9d020c5",
+            "link": "https://ballchasing.com/api/replays/b84e8575-fcb7-45c7-a9d5-864ca9d020c5",
+            "rocket_league_id": "1A5B7CB44094EFA97C6D44BEA4900DCF",
+            "replay_title": "2021-04-05.20.01 Nova Casual Doubles Win",
+            "map_code": "music_p",
+            "map_name": "Neon Fields",
+            "playlist_id": "unranked-doubles",
+            "playlist_name": "Unranked Doubles",
+            "duration": 383,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-05T20:01:36+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-05T21:01:34.12759+02:00",
+            "uploader": {
+                "steam_id": "76561198805606698",
+                "name": "NoVa",
+                "profile_url": "https://steamcommunity.com/profiles/76561198805606698/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e1/e1e299abd2a24b30d032f585293532479b838964.jpg"
+            },
+            "blue": {
+                "goals": 6,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 383.073,
+                        "name": "0",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198354504385"
+                        },
+                        "mvp": true,
+                        "score": 809
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 383.073,
+                        "name": "Nova",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198805606698"
+                        },
+                        "score": 805
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 383.073,
+                        "name": "Maboroshi^-^",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198117641067"
+                        },
+                        "score": 408
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 383.073,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 338
+                    }
+                ]
+            }
+        },
+        {
+            "id": "58224e0b-084f-4326-99e3-d34e395f3bc9",
+            "link": "https://ballchasing.com/api/replays/58224e0b-084f-4326-99e3-d34e395f3bc9",
+            "rocket_league_id": "EC9F89044E545EAC6737BF86C30E4A71",
+            "replay_title": "EC9F89044E545EAC6737BF86C30E4A71",
+            "recorder": "Haze",
+            "map_code": "music_p",
+            "map_name": "Neon Fields",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 658,
+            "overtime": true,
+            "overtime_seconds": 287,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-05T19:20:23+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-05T19:20:42.65265+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 658.083,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 610
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 658.083,
+                        "name": "Maboroshi^-^",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198117641067"
+                        },
+                        "score": 478
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 658.083,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 314
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 658.083,
+                        "name": "FKIIZ",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "870c1216f0010900"
+                        },
+                        "mvp": true,
+                        "score": 756
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 658.083,
+                        "name": "GoblinSlayer1993",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "GoblinSlayer1993"
+                        },
+                        "score": 591
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 658.083,
+                        "name": "Kioshy--",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "Kioshy--"
+                        },
+                        "score": 451
+                    }
+                ]
+            }
+        },
+        {
+            "id": "4603c46f-1567-49a2-95e7-83d4b84588ed",
+            "link": "https://ballchasing.com/api/replays/4603c46f-1567-49a2-95e7-83d4b84588ed",
+            "rocket_league_id": "4EED36064E620874C1F3AE97F365BD36",
+            "replay_title": "4EED36064E620874C1F3AE97F365BD36",
+            "recorder": "Haze",
+            "map_code": "eurostadium_night_p",
+            "map_name": "Mannfield (Night)",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 231,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-05T18:47:02+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-05T18:47:19.138527+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 5,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 231.375,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "mvp": true,
+                        "score": 382
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 231.375,
+                        "name": "Maboroshi^-^",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198117641067"
+                        },
+                        "score": 322
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 231.375,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 230
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 81.4107,
+                        "end_time": 186.026,
+                        "name": "Bananix",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198849139754"
+                        },
+                        "score": 178
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 231.375,
+                        "name": "Karamu",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "9fc5bcc9f4010900"
+                        },
+                        "score": 169
+                    },
+                    {
+                        "start_time": 92.388,
+                        "end_time": 186.026,
+                        "name": "LanchrY-",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "LanchrY-"
+                        },
+                        "score": 68
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 79.3255,
+                        "name": "LOST_A_M_E_R",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "LOST_A_M_E_R"
+                        },
+                        "score": 20
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 79.3255,
+                        "name": "FRMA00",
+                        "id": {
+                            "platform": "epic",
+                            "id": "d6d79267bd5840a6853b2042261f7ea9"
+                        },
+                        "score": 4
+                    },
+                    {
+                        "start_time": 79.3255,
+                        "end_time": 227.741,
+                        "name": "Saltie",
+                        "id": {},
+                        "score": 2
+                    },
+                    {
+                        "start_time": 79.3255,
+                        "end_time": 231.375,
+                        "name": "Centice",
+                        "id": {},
+                        "score": 0
+                    },
+                    {
+                        "start_time": 194.145,
+                        "end_time": 201.295,
+                        "name": "b_flowers-93",
+                        "id": {
+                            "platform": "epic",
+                            "id": "e9bb2fffac1c4fb4986225f645bfa8d4"
+                        },
+                        "score": 0
+                    },
+                    {
+                        "start_time": 222.769,
+                        "end_time": 228.964,
+                        "name": "dz.leon",
+                        "id": {
+                            "platform": "epic",
+                            "id": "e93d46b8d2c54c9db9515c73d22ae568"
+                        },
+                        "score": 0
+                    },
+                    {
+                        "start_time": 222.869,
+                        "end_time": 231.375,
+                        "name": "idemooir Berd",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198448014552"
+                        },
+                        "score": 0
+                    }
+                ]
+            }
+        },
+        {
+            "id": "0fe2524f-07f7-4fd6-a5ba-ca6d7b697c22",
+            "link": "https://ballchasing.com/api/replays/0fe2524f-07f7-4fd6-a5ba-ca6d7b697c22",
+            "rocket_league_id": "DCEE8A904428E00EDE4A669BC361C903",
+            "replay_title": "DCEE8A904428E00EDE4A669BC361C903",
+            "recorder": "Haze",
+            "map_code": "wasteland_s_p",
+            "map_name": "Wasteland (Standard)",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 359,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-05T18:28:43+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-05T18:30:09.570442+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 359.782,
+                        "name": "Negative Astros",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "4759180500000900"
+                        },
+                        "score": 331
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 359.782,
+                        "name": "LanchrY-",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "LanchrY-"
+                        },
+                        "score": 278
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 359.782,
+                        "name": "Yoti",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198846639139"
+                        },
+                        "score": 218
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 359.782,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "mvp": true,
+                        "score": 525
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 359.782,
+                        "name": "Maboroshi^-^",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198117641067"
+                        },
+                        "score": 395
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 359.782,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 309
+                    }
+                ]
+            }
+        },
+        {
+            "id": "53fa069f-71c7-400a-9228-3f5cd7cd2ecd",
+            "link": "https://ballchasing.com/api/replays/53fa069f-71c7-400a-9228-3f5cd7cd2ecd",
+            "rocket_league_id": "1E26EEAA4BD19B10DCB315AB7B1AE38D",
+            "replay_title": "mabo",
+            "recorder": "Ke1ma",
+            "map_code": "eurostadium_night_p",
+            "map_name": "Mannfield (Night)",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 346,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-01T23:04:26Z",
+            "date_has_tz": false,
+            "visibility": "public",
+            "created": "2021-04-05T16:18:19.89935+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "TTVJey",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "TTVJey"
+                        },
+                        "mvp": true,
+                        "score": 644
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "fifa_star0711",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "fifa_star0711"
+                        },
+                        "score": 458
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "Ballex_961",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "Ballex_961"
+                        },
+                        "score": 160
+                    }
+                ]
+            },
+            "orange": {
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "XxUwuSwagOwOxX",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f90e0359530d45f889b278fb1baefb62"
+                        },
+                        "score": 306
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 58
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 52
+                    }
+                ]
+            }
+        },
+        {
+            "id": "aff3d096-2a90-418c-a469-b37671028e3c",
+            "link": "https://ballchasing.com/api/replays/aff3d096-2a90-418c-a469-b37671028e3c",
+            "rocket_league_id": "FF9695E649E493401E9825AE9FFD7B6D",
+            "replay_title": "FF9695E649E493401E9825AE9FFD7B6D",
+            "recorder": "Haze",
+            "map_code": "underwater_p",
+            "map_name": "Aquadome",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 384,
+            "overtime": true,
+            "overtime_seconds": 27,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-05T15:00:27+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-05T15:00:51.815864+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 384.268,
+                        "name": "Traceur",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198037215805"
+                        },
+                        "score": 520
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 384.268,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 274
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 384.268,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 268
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 384.268,
+                        "name": "Alpha974",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198178173605"
+                        },
+                        "mvp": true,
+                        "score": 678
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 384.268,
+                        "name": "Riquel-LKA",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f4646195d86244dab21c43ad6da74686"
+                        },
+                        "score": 356
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 384.268,
+                        "name": "Ferrari Peak",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198348512342"
+                        },
+                        "score": 212
+                    }
+                ]
+            }
+        },
+        {
+            "id": "11de7cbc-dcaa-4d7d-b412-5a8006a2ee22",
+            "link": "https://ballchasing.com/api/replays/11de7cbc-dcaa-4d7d-b412-5a8006a2ee22",
+            "rocket_league_id": "21D89C2143B009B76BE8B6B18A1C1E6D",
+            "replay_title": "21D89C2143B009B76BE8B6B18A1C1E6D",
+            "recorder": "Haze",
+            "map_code": "neotokyo_standard_p",
+            "map_name": "Neo Tokyo (Standard)",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 363,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-04T22:00:30+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-04T22:01:08.829802+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 363.625,
+                        "name": "Braconja",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "Braconja"
+                        },
+                        "score": 383
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 363.625,
+                        "name": "JaM_J4nn1s_YT",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "JaM_J4nn1s_YT"
+                        },
+                        "score": 310
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 363.625,
+                        "name": "YankeMyDoodle",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "YankeMyDoodle"
+                        },
+                        "score": 169
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 363.625,
+                        "name": "Maboroshi^-^",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198117641067"
+                        },
+                        "mvp": true,
+                        "score": 595
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 363.625,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 390
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 363.625,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 187
+                    }
+                ]
+            }
+        },
+        {
+            "id": "71bdfc9e-6527-40e0-8eac-e4f0bfad5b56",
+            "link": "https://ballchasing.com/api/replays/71bdfc9e-6527-40e0-8eac-e4f0bfad5b56",
+            "rocket_league_id": "BA5679CF48C58B7E7F3220A85F486C0C",
+            "replay_title": "BA5679CF48C58B7E7F3220A85F486C0C",
+            "recorder": "Haze",
+            "map_code": "farm_p",
+            "map_name": "Farmstead",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 375,
+            "overtime": true,
+            "overtime_seconds": 23,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-04T18:06:19+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-04T18:07:06.626042+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 375.165,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 483
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 375.165,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 361
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 375.165,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 142
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 375.165,
+                        "name": "Riphious",
+                        "id": {
+                            "platform": "epic",
+                            "id": "0e05d8b4748f4b5cb6367832670d222e"
+                        },
+                        "mvp": true,
+                        "score": 361
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 375.165,
+                        "name": "Fragma_",
+                        "id": {
+                            "platform": "epic",
+                            "id": "7438803a19394fc39960a02dc2701d82"
+                        },
+                        "score": 284
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 375.165,
+                        "name": "Nytob",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198332897464"
+                        },
+                        "score": 250
+                    }
+                ]
+            }
+        },
+        {
+            "id": "24581434-3150-4f3c-9927-e2d53573745e",
+            "link": "https://ballchasing.com/api/replays/24581434-3150-4f3c-9927-e2d53573745e",
+            "rocket_league_id": "FC88679A49CC8B7B3248EFA4380265E8",
+            "replay_title": "2021-04-04.17.42",
+            "map_code": "stadium_p",
+            "map_name": "DFH Stadium",
+            "playlist_id": "unranked-doubles",
+            "playlist_name": "Unranked Doubles",
+            "duration": 371,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-04T17:42:07+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-04T17:42:03.71698+02:00",
+            "uploader": {
+                "steam_id": "76561198110077995",
+                "name": "Sumarbrander",
+                "profile_url": "https://steamcommunity.com/id/yanxx6/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/81/8162d7818f0d0543d21ab606b46f6c3df69f8658.jpg"
+            },
+            "blue": {
+                "goals": 5,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 371.393,
+                        "name": "Himbeerfreak1",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198134619508"
+                        },
+                        "mvp": true,
+                        "score": 822
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 371.393,
+                        "name": "Sumarbrander",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198110077995"
+                        },
+                        "score": 450
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 371.393,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 386
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 371.393,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 342
+                    }
+                ]
+            }
+        },
+        {
+            "id": "97c0950b-14c2-43ae-923b-cedd58270cd4",
+            "link": "https://ballchasing.com/api/replays/97c0950b-14c2-43ae-923b-cedd58270cd4",
+            "rocket_league_id": "22AED485470E894FA156C2AC1ABE6E3A",
+            "replay_title": "22AED485470E894FA156C2AC1ABE6E3A",
+            "recorder": "Haze",
+            "map_code": "chn_stadium_day_p",
+            "map_name": "Forbidden Temple (Day)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 337,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-02T23:43:33+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-02T23:44:00.525257+02:00",
+            "min_rank": {
+                "tier": 15,
+                "division": 1,
+                "name": "Diamond III Division 1",
+                "id": "diamond-3"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 337.473,
+                        "name": "ExcioZ",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197971927385"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 1,
+                            "name": "Diamond III Division 1",
+                            "id": "diamond-3"
+                        },
+                        "score": 425
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 337.473,
+                        "name": "Quickechaos",
+                        "id": {
+                            "platform": "epic",
+                            "id": "e2499d6f330a48658a8b85f5a025a1fe"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 2,
+                            "name": "Diamond III Division 2",
+                            "id": "diamond-3"
+                        },
+                        "score": 224
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 337.473,
+                        "name": "Franini",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198082996989"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 1,
+                            "name": "Diamond III Division 1",
+                            "id": "diamond-3"
+                        },
+                        "score": 205
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 337.473,
+                        "name": "XxUwuSwagOwOxX",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f90e0359530d45f889b278fb1baefb62"
+                        },
+                        "mvp": true,
+                        "score": 402
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 337.473,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 2,
+                            "name": "Diamond III Division 2",
+                            "id": "diamond-3"
+                        },
+                        "score": 216
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 337.473,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 180
+                    }
+                ]
+            }
+        },
+        {
+            "id": "40323f1e-d781-4cd2-8d8d-fbfc0cbb45e0",
+            "link": "https://ballchasing.com/api/replays/40323f1e-d781-4cd2-8d8d-fbfc0cbb45e0",
+            "rocket_league_id": "85DD595D4DF67D7A658713A62D9C59A1",
+            "replay_title": "replay",
+            "recorder": "XxUwuSwagOwOxX",
+            "map_code": "eurostadium_rainy_p",
+            "map_name": "Mannfield (Stormy)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 514,
+            "overtime": true,
+            "overtime_seconds": 174,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-02T23:32:18+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-02T23:32:55.686784+02:00",
+            "min_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561199021486869",
+                "name": ":'(",
+                "profile_url": "https://steamcommunity.com/id/mabo2Fast/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e7/e7927294cfb4cce3ebe775dab81f2e381c2af7df.jpg"
+            },
+            "blue": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 514.055,
+                        "name": "Chittlen",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198201214346"
+                        },
+                        "score": 566
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 514.055,
+                        "name": "Kudak",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198207029480"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 4,
+                            "name": "Diamond II Division 4",
+                            "id": "diamond-2"
+                        },
+                        "score": 518
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 514.055,
+                        "name": "ShmegForever",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197970584456"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 3,
+                            "name": "Diamond II Division 3",
+                            "id": "diamond-2"
+                        },
+                        "score": 222
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 514.055,
+                        "name": "XxUwuSwagOwOxX",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f90e0359530d45f889b278fb1baefb62"
+                        },
+                        "mvp": true,
+                        "rank": {
+                            "tier": 15,
+                            "division": 2,
+                            "name": "Diamond III Division 2",
+                            "id": "diamond-3"
+                        },
+                        "score": 848
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 514.055,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 373
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 514.055,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 230
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ec9c9990-1f5a-4721-b52b-aab7132a7554",
+            "link": "https://ballchasing.com/api/replays/ec9c9990-1f5a-4721-b52b-aab7132a7554",
+            "rocket_league_id": "22F36F914020D65ECC0BF5BE100F0574",
+            "replay_title": "22F36F914020D65ECC0BF5BE100F0574",
+            "recorder": "Haze",
+            "map_code": "eurostadium_rainy_p",
+            "map_name": "Mannfield (Stormy)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 514,
+            "overtime": true,
+            "overtime_seconds": 174,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-02T23:32:15+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-02T23:32:36.999385+02:00",
+            "min_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 514.173,
+                        "name": "Chittlen",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198201214346"
+                        },
+                        "score": 566
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 514.173,
+                        "name": "Kudak",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198207029480"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 4,
+                            "name": "Diamond II Division 4",
+                            "id": "diamond-2"
+                        },
+                        "score": 518
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 514.173,
+                        "name": "ShmegForever",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197970584456"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 3,
+                            "name": "Diamond II Division 3",
+                            "id": "diamond-2"
+                        },
+                        "score": 222
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 514.173,
+                        "name": "XxUwuSwagOwOxX",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f90e0359530d45f889b278fb1baefb62"
+                        },
+                        "mvp": true,
+                        "score": 848
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 514.173,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 2,
+                            "name": "Diamond III Division 2",
+                            "id": "diamond-3"
+                        },
+                        "score": 373
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 514.173,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 230
+                    }
+                ]
+            }
+        },
+        {
+            "id": "08aac33c-03b1-4bea-8f79-bd102ae85bc5",
+            "link": "https://ballchasing.com/api/replays/08aac33c-03b1-4bea-8f79-bd102ae85bc5",
+            "rocket_league_id": "27735E774A4AFC6D7C7105B1F0296C48",
+            "replay_title": "27735E774A4AFC6D7C7105B1F0296C48",
+            "recorder": "Haze",
+            "map_code": "chn_stadium_day_p",
+            "map_name": "Forbidden Temple (Day)",
+            "duration": 333,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-02T23:22:18+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-04-02T23:23:05.093097+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "name": "Hazerdeux",
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 333.757,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 200
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.757,
+                        "name": "XxUwuSwagOwOxX",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f90e0359530d45f889b278fb1baefb62"
+                        },
+                        "score": 156
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.757,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 144
+                    }
+                ]
+            },
+            "orange": {
+                "name": "hobo0609",
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 333.757,
+                        "name": "H8CH",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "513bcc0500000900"
+                        },
+                        "mvp": true,
+                        "score": 425
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.757,
+                        "name": "hobo0609",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "28217c0700000900"
+                        },
+                        "score": 254
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.757,
+                        "name": "iPuR3 LeGeNd",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "d4c461d6f7010900"
+                        },
+                        "score": 178
+                    }
+                ]
+            }
+        },
+        {
+            "id": "4c132458-5516-4d9c-8853-dd5d7dcc03a7",
+            "link": "https://ballchasing.com/api/replays/4c132458-5516-4d9c-8853-dd5d7dcc03a7",
+            "rocket_league_id": "1E26EEAA4BD19B10DCB315AB7B1AE38D",
+            "replay_title": "mabo",
+            "recorder": "Ke1ma",
+            "map_code": "eurostadium_night_p",
+            "map_name": "Mannfield (Night)",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 346,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-04-01T23:04:26Z",
+            "date_has_tz": false,
+            "visibility": "public",
+            "created": "2021-04-01T23:06:04.960867+02:00",
+            "uploader": {
+                "steam_id": "76561199021486869",
+                "name": ":'(",
+                "profile_url": "https://steamcommunity.com/id/mabo2Fast/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e7/e7927294cfb4cce3ebe775dab81f2e381c2af7df.jpg"
+            },
+            "blue": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "TTVJey",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "TTVJey"
+                        },
+                        "mvp": true,
+                        "score": 644
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "fifa_star0711",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "fifa_star0711"
+                        },
+                        "score": 458
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "Ballex_961",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "Ballex_961"
+                        },
+                        "score": 160
+                    }
+                ]
+            },
+            "orange": {
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "XxUwuSwagOwOxX",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f90e0359530d45f889b278fb1baefb62"
+                        },
+                        "score": 306
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 58
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 346.746,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 52
+                    }
+                ]
+            }
+        },
+        {
+            "id": "51d7eecd-1fc1-401e-b19a-5719c1a5087c",
+            "link": "https://ballchasing.com/api/replays/51d7eecd-1fc1-401e-b19a-5719c1a5087c",
+            "rocket_league_id": "C250CD9942B00E9C3A8D61BC39025A8A",
+            "replay_title": "verif",
+            "recorder": "XxUwuSwagOwOxX",
+            "map_code": "wasteland_night_s_p",
+            "map_name": "Wasteland (Standard, Night)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 280,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-31T23:06:50+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-31T23:07:17.928223+02:00",
+            "min_rank": {
+                "tier": 14,
+                "division": 4,
+                "name": "Diamond II Division 4",
+                "id": "diamond-2"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561199021486869",
+                "name": ":'(",
+                "profile_url": "https://steamcommunity.com/id/mabo2Fast/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e7/e7927294cfb4cce3ebe775dab81f2e381c2af7df.jpg"
+            },
+            "blue": {
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 280.073,
+                        "name": "MaNrY",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197994746560"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 1,
+                            "name": "Diamond III Division 1",
+                            "id": "diamond-3"
+                        },
+                        "score": 180
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 280.073,
+                        "name": "Inmortan",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197987682724"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 4,
+                            "name": "Diamond II Division 4",
+                            "id": "diamond-2"
+                        },
+                        "score": 136
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 280.073,
+                        "name": "Brutal_Bullet",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197970383458"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 1,
+                            "name": "Diamond III Division 1",
+                            "id": "diamond-3"
+                        },
+                        "score": 88
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 280.073,
+                        "name": "XxUwuSwagOwOxX",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f90e0359530d45f889b278fb1baefb62"
+                        },
+                        "mvp": true,
+                        "rank": {
+                            "tier": 15,
+                            "division": 2,
+                            "name": "Diamond III Division 2",
+                            "id": "diamond-3"
+                        },
+                        "score": 503
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 280.073,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 386
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 280.073,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 80
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ca51da9a-6064-4d39-adfa-8acf53995874",
+            "link": "https://ballchasing.com/api/replays/ca51da9a-6064-4d39-adfa-8acf53995874",
+            "rocket_league_id": "EB441DBE4DF5442BF051F7B57A3B5587",
+            "replay_title": "game interes",
+            "recorder": "XxUwuSwagOwOxX",
+            "map_code": "cs_p",
+            "map_name": "Champions Field",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 379,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-31T22:49:52+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-31T22:50:18.916214+02:00",
+            "min_rank": {
+                "tier": 14,
+                "division": 3,
+                "name": "Diamond II Division 3",
+                "id": "diamond-2"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 1,
+                "name": "Diamond III Division 1",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561199021486869",
+                "name": ":'(",
+                "profile_url": "https://steamcommunity.com/id/mabo2Fast/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e7/e7927294cfb4cce3ebe775dab81f2e381c2af7df.jpg"
+            },
+            "blue": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 379.156,
+                        "name": "Owergrownkitten",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "f267880300000900"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 3,
+                            "name": "Diamond II Division 3",
+                            "id": "diamond-2"
+                        },
+                        "score": 562
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 379.156,
+                        "name": "willson17",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "3f34bd0200000900"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 3,
+                            "name": "Diamond II Division 3",
+                            "id": "diamond-2"
+                        },
+                        "score": 292
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 379.156,
+                        "name": "kortvarsel",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "737add0800000900"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 1,
+                            "name": "Diamond III Division 1",
+                            "id": "diamond-3"
+                        },
+                        "score": 286
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 5,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 379.156,
+                        "name": "XxUwuSwagOwOxX",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f90e0359530d45f889b278fb1baefb62"
+                        },
+                        "mvp": true,
+                        "rank": {
+                            "tier": 15,
+                            "division": 1,
+                            "name": "Diamond III Division 1",
+                            "id": "diamond-3"
+                        },
+                        "score": 982
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 379.156,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 306
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 379.156,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 284
+                    }
+                ]
+            }
+        },
+        {
+            "id": "a40170df-a637-4ee3-82da-63ca45137f10",
+            "link": "https://ballchasing.com/api/replays/a40170df-a637-4ee3-82da-63ca45137f10",
+            "rocket_league_id": "565A82F64A550A45446E41A7236D41D0",
+            "replay_title": "565A82F64A550A45446E41A7236D41D0",
+            "recorder": "Haze",
+            "map_code": "trainstation_p",
+            "map_name": "Urban Central",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 328,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-28T22:20:52+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-28T22:52:53.081066+02:00",
+            "min_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 328.018,
+                        "name": "That's a lotta damage",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198385772112"
+                        },
+                        "mvp": true,
+                        "score": 363
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 328.018,
+                        "name": "Fly",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198338658243"
+                        },
+                        "score": 312
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 328.018,
+                        "name": "Tommygun",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198018467700"
+                        },
+                        "score": 198
+                    }
+                ]
+            },
+            "orange": {
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 328.018,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 2,
+                            "name": "Diamond III Division 2",
+                            "id": "diamond-3"
+                        },
+                        "score": 289
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 328.018,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 192
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 328.018,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 152
+                    }
+                ]
+            }
+        },
+        {
+            "id": "b20baf21-1361-4113-a74b-bc1754c0d19b",
+            "link": "https://ballchasing.com/api/replays/b20baf21-1361-4113-a74b-bc1754c0d19b",
+            "rocket_league_id": "BEB6051F43D4FB2B082A719140F48123",
+            "replay_title": "BEB6051F43D4FB2B082A719140F48123",
+            "recorder": "Haze",
+            "map_code": "neotokyo_standard_p",
+            "map_name": "Neo Tokyo (Standard)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 339,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-28T22:27:39+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-28T22:28:13.047045+02:00",
+            "min_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 339.682,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "mvp": true,
+                        "rank": {
+                            "tier": 15,
+                            "division": 2,
+                            "name": "Diamond III Division 2",
+                            "id": "diamond-3"
+                        },
+                        "score": 286
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 339.682,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 260
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 339.682,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 218
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 339.682,
+                        "name": "hugodub13",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198801718816"
+                        },
+                        "score": 481
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 339.682,
+                        "name": "Tommygun",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198018467700"
+                        },
+                        "score": 250
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 339.682,
+                        "name": "Capo",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198033451276"
+                        },
+                        "score": 181
+                    }
+                ]
+            }
+        },
+        {
+            "id": "1ec53c85-bf90-490b-91ed-735a8b58c011",
+            "link": "https://ballchasing.com/api/replays/1ec53c85-bf90-490b-91ed-735a8b58c011",
+            "rocket_league_id": "3653B73D4A68FEEAF2056B96B2E9E04C",
+            "replay_title": "3653B73D4A68FEEAF2056B96B2E9E04C",
+            "recorder": "Haze",
+            "map_code": "chn_stadium_p",
+            "map_name": "Forbidden Temple",
+            "duration": 333,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-28T17:39:53+02:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-28T17:40:22.14952+02:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "name": "Curvy Venom",
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 333.436,
+                        "name": "MasalaaChicken",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "bd58890900000900"
+                        },
+                        "mvp": true,
+                        "score": 480
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.436,
+                        "name": "Gerbiio",
+                        "id": {
+                            "platform": "epic",
+                            "id": "c6337e5e54d7419aa778d38f3f3e8c7f"
+                        },
+                        "score": 442
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.436,
+                        "name": "richard the man",
+                        "id": {
+                            "platform": "epic",
+                            "id": "426bd1a00edd4f02845ecc219ccc2fb4"
+                        },
+                        "score": 132
+                    }
+                ]
+            },
+            "orange": {
+                "name": "HAMAMOE",
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 333.436,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 240
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.436,
+                        "name": "UwU",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561199021486869"
+                        },
+                        "score": 210
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.436,
+                        "name": "MoeBius",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198371471512"
+                        },
+                        "score": 198
+                    }
+                ]
+            }
+        },
+        {
+            "id": "5397deaa-42f6-4e0b-bd22-fdc8fd4c686e",
+            "link": "https://ballchasing.com/api/replays/5397deaa-42f6-4e0b-bd22-fdc8fd4c686e",
+            "rocket_league_id": "7AC29AED4253F05DF0DBDA80251338BA",
+            "replay_title": "2021-03-27.20.44 Lyis Ranked Doubles Loss",
+            "map_code": "eurostadium_rainy_p",
+            "map_name": "Mannfield (Stormy)",
+            "playlist_id": "ranked-doubles",
+            "playlist_name": "Ranked Doubles",
+            "duration": 383,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-27T20:44:05Z",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-27T21:44:59.668326+01:00",
+            "min_rank": {
+                "tier": 14,
+                "division": 3,
+                "name": "Diamond II Division 3",
+                "id": "diamond-2"
+            },
+            "max_rank": {
+                "tier": 14,
+                "division": 3,
+                "name": "Diamond II Division 3",
+                "id": "diamond-2"
+            },
+            "uploader": {
+                "steam_id": "76561198065197528",
+                "name": "Lyis",
+                "profile_url": "https://steamcommunity.com/id/lyisshyll/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/f1/f140fed55ad6b9bc1cc9135bd9519b4509179024.jpg"
+            },
+            "blue": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 383.869,
+                        "name": "BENZ0CAINE",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198054946848"
+                        },
+                        "score": 456
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 383.869,
+                        "name": "Lyis",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198065197528"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 3,
+                            "name": "Diamond II Division 3",
+                            "id": "diamond-2"
+                        },
+                        "score": 410
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 5,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 383.869,
+                        "name": "XxUwuSwagOwOxX",
+                        "id": {
+                            "platform": "epic",
+                            "id": "f90e0359530d45f889b278fb1baefb62"
+                        },
+                        "mvp": true,
+                        "score": 739
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 383.869,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 242
+                    }
+                ]
+            }
+        },
+        {
+            "id": "7258070b-3dad-4a71-a253-f61501ff36ca",
+            "link": "https://ballchasing.com/api/replays/7258070b-3dad-4a71-a253-f61501ff36ca",
+            "rocket_league_id": "F33496404717F40F9919A79CB9BDD9FE",
+            "replay_title": "F33496404717F40F9919A79CB9BDD9FE",
+            "recorder": "Haze",
+            "map_code": "cs_p",
+            "map_name": "Champions Field",
+            "playlist_id": "unranked-standard",
+            "playlist_name": "Unranked Standard",
+            "duration": 354,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-27T00:01:11+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-27T00:02:26.966934+01:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 354.22,
+                        "name": "Kahzuu",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198059570195"
+                        },
+                        "score": 450
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 354.22,
+                        "name": "TANU Veveabso",
+                        "id": {
+                            "platform": "epic",
+                            "id": "48bb22e12f70469991b4ce31482494b1"
+                        },
+                        "score": 336
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 354.22,
+                        "name": "Kissyfrot",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198010310120"
+                        },
+                        "score": 82
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 354.22,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "mvp": true,
+                        "score": 487
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 354.22,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 232
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 354.22,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 216
+                    }
+                ]
+            }
+        },
+        {
+            "id": "2b7307bb-f1a6-42bd-a23b-c85243fce30f",
+            "link": "https://ballchasing.com/api/replays/2b7307bb-f1a6-42bd-a23b-c85243fce30f",
+            "rocket_league_id": "44B3D1024041068E7EBB3D90943D301A",
+            "replay_title": "44B3D1024041068E7EBB3D90943D301A",
+            "recorder": "Haze",
+            "map_code": "chn_stadium_day_p",
+            "map_name": "Forbidden Temple (Day)",
+            "playlist_id": "ranked-duels",
+            "playlist_name": "Ranked Duels",
+            "duration": 445,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-16T18:44:06+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-16T19:35:00.325697+01:00",
+            "min_rank": {
+                "tier": 12,
+                "division": 4,
+                "name": "Platinum III Division 4",
+                "id": "platinum-3"
+            },
+            "max_rank": {
+                "tier": 12,
+                "division": 4,
+                "name": "Platinum III Division 4",
+                "id": "platinum-3"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 9,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 445.509,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "mvp": true,
+                        "rank": {
+                            "tier": 12,
+                            "division": 4,
+                            "name": "Platinum III Division 4",
+                            "id": "platinum-3"
+                        },
+                        "score": 1625
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 6,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 445.509,
+                        "name": "fireball1610nic",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "fireball1610nic"
+                        },
+                        "score": 1093
+                    }
+                ]
+            }
+        },
+        {
+            "id": "281791b2-5d65-4c52-85f2-17052aee014f",
+            "link": "https://ballchasing.com/api/replays/281791b2-5d65-4c52-85f2-17052aee014f",
+            "rocket_league_id": "7ADCC52047554DD22AB00AB704F66B77",
+            "replay_title": "7ADCC52047554DD22AB00AB704F66B77",
+            "recorder": "Haze",
+            "map_code": "eurostadium_rainy_p",
+            "map_name": "Mannfield (Stormy)",
+            "playlist_id": "unranked-doubles",
+            "playlist_name": "Unranked Doubles",
+            "duration": 393,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-16T18:12:12+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-16T19:34:42.199729+01:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 393.109,
+                        "name": "Hanami",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198831030643"
+                        },
+                        "score": 672
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 393.109,
+                        "name": "Wagr<3",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198355799443"
+                        },
+                        "score": 220
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 6,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 393.109,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "mvp": true,
+                        "score": 773
+                    },
+                    {
+                        "start_time": 85.3809,
+                        "end_time": 393.109,
+                        "name": "BOBYKINI",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198965339950"
+                        },
+                        "score": 523
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 75.0538,
+                        "name": "BiCoShowTime",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "5ee2440d00000900"
+                        },
+                        "score": 4
+                    },
+                    {
+                        "start_time": 70.1649,
+                        "end_time": 90.3924,
+                        "name": "Hollywood",
+                        "id": {},
+                        "score": 0
+                    }
+                ]
+            }
+        },
+        {
+            "id": "bf6a7b5f-5ab5-4078-810f-864dd6b1dd2f",
+            "link": "https://ballchasing.com/api/replays/bf6a7b5f-5ab5-4078-810f-864dd6b1dd2f",
+            "rocket_league_id": "A873413A473B44B204ECF5AA0089AAAA",
+            "replay_title": "A873413A473B44B204ECF5AA0089AAAA",
+            "recorder": "Haze",
+            "map_code": "neotokyo_standard_p",
+            "map_name": "Neo Tokyo (Standard)",
+            "playlist_id": "unranked-doubles",
+            "playlist_name": "Unranked Doubles",
+            "duration": 351,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-15T19:48:07+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-15T19:48:39.409129+01:00",
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 351.965,
+                        "name": "One",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197989182854"
+                        },
+                        "score": 378
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 351.965,
+                        "name": "Mr Joker",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197994470798"
+                        },
+                        "score": 245
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 351.965,
+                        "name": "rTrices",
+                        "id": {
+                            "platform": "epic",
+                            "id": "1d070f35076d441dad7d04b8c00e3664"
+                        },
+                        "mvp": true,
+                        "score": 864
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 351.965,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 338
+                    }
+                ]
+            }
+        },
+        {
+            "id": "b40d865f-a384-42c6-a717-da6a47c24019",
+            "link": "https://ballchasing.com/api/replays/b40d865f-a384-42c6-a717-da6a47c24019",
+            "rocket_league_id": "EABC8E164AAE846558F0DC9B0D124E6C",
+            "replay_title": "2021-03-15.19.48 One Casual Doubles Loss",
+            "map_code": "neotokyo_standard_p",
+            "map_name": "Neo Tokyo (Standard)",
+            "playlist_id": "unranked-doubles",
+            "playlist_name": "Unranked Doubles",
+            "duration": 352,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-15T19:48:05+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-15T19:48:03.660964+01:00",
+            "uploader": {
+                "steam_id": "76561197989182854",
+                "name": "One",
+                "profile_url": "https://steamcommunity.com/id/Sammystayre/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/26/2614f7b65f3c2505dfd34e87d66b92ef94ecf8b9.jpg"
+            },
+            "blue": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 352.135,
+                        "name": "One",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197989182854"
+                        },
+                        "score": 378
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 352.135,
+                        "name": "Mr Joker",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197994470798"
+                        },
+                        "score": 245
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 352.135,
+                        "name": "rTrices",
+                        "id": {
+                            "platform": "epic",
+                            "id": "1d070f35076d441dad7d04b8c00e3664"
+                        },
+                        "mvp": true,
+                        "score": 864
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 352.135,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 338
+                    }
+                ]
+            }
+        },
+        {
+            "id": "5a94d1e4-6a83-4a78-a7fc-978bee8fca4d",
+            "link": "https://ballchasing.com/api/replays/5a94d1e4-6a83-4a78-a7fc-978bee8fca4d",
+            "rocket_league_id": "D60E61E74007D9B78818048550DECC55",
+            "replay_title": "2021-03-15.19.41 One Casual Doubles Loss",
+            "map_code": "stadium_day_p",
+            "map_name": "DFH Stadium (Day)",
+            "playlist_id": "unranked-doubles",
+            "playlist_name": "Unranked Doubles",
+            "duration": 389,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-15T19:41:15+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-15T19:41:14.089576+01:00",
+            "uploader": {
+                "steam_id": "76561197989182854",
+                "name": "One",
+                "profile_url": "https://steamcommunity.com/id/Sammystayre/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/26/2614f7b65f3c2505dfd34e87d66b92ef94ecf8b9.jpg"
+            },
+            "blue": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 389.763,
+                        "name": "One",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197989182854"
+                        },
+                        "score": 422
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 389.763,
+                        "name": "Mr Joker",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197994470798"
+                        },
+                        "score": 402
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 6,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 389.763,
+                        "name": "rTrices",
+                        "id": {
+                            "platform": "epic",
+                            "id": "1d070f35076d441dad7d04b8c00e3664"
+                        },
+                        "mvp": true,
+                        "score": 826
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 389.763,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 382
+                    }
+                ]
+            }
+        },
+        {
+            "id": "b26945eb-9dfc-4377-a698-cee8a709835f",
+            "link": "https://ballchasing.com/api/replays/b26945eb-9dfc-4377-a698-cee8a709835f",
+            "rocket_league_id": "EA8CAC5447F04177D3335C9CCA809454",
+            "replay_title": "2021-03-15.19.33 One Casual Doubles Loss",
+            "map_code": "utopiastadium_p",
+            "map_name": "Utopia Coliseum",
+            "playlist_id": "unranked-doubles",
+            "playlist_name": "Unranked Doubles",
+            "duration": 421,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-15T19:33:12+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-15T19:33:10.906642+01:00",
+            "uploader": {
+                "steam_id": "76561197989182854",
+                "name": "One",
+                "profile_url": "https://steamcommunity.com/id/Sammystayre/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/26/2614f7b65f3c2505dfd34e87d66b92ef94ecf8b9.jpg"
+            },
+            "blue": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 421.429,
+                        "name": "One",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197989182854"
+                        },
+                        "score": 680
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 421.429,
+                        "name": "Mr Joker",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197994470798"
+                        },
+                        "score": 523
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 8,
+                "players": [
+                    {
+                        "start_time": 136.849,
+                        "end_time": 421.429,
+                        "name": "rTrices",
+                        "id": {
+                            "platform": "epic",
+                            "id": "1d070f35076d441dad7d04b8c00e3664"
+                        },
+                        "mvp": true,
+                        "score": 804
+                    },
+                    {
+                        "start_time": 99.0031,
+                        "end_time": 421.429,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 573
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 107.067,
+                        "name": "cili321",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "cili321"
+                        },
+                        "score": 290
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 96.4163,
+                        "name": "S O N O R",
+                        "id": {
+                            "platform": "epic",
+                            "id": "3c77e6e07e8a465c8f7c2c78a88073ce"
+                        },
+                        "score": 88
+                    },
+                    {
+                        "start_time": 91.5019,
+                        "end_time": 141.934,
+                        "name": "Fury",
+                        "id": {},
+                        "score": 0
+                    }
+                ]
+            }
+        },
+        {
+            "id": "6875a540-d226-4193-ab0e-b35da9368089",
+            "link": "https://ballchasing.com/api/replays/6875a540-d226-4193-ab0e-b35da9368089",
+            "rocket_league_id": "E91B30134C928A327A1B37B884E4C594",
+            "replay_title": "E91B30134C928A327A1B37B884E4C594",
+            "recorder": "Haze",
+            "map_code": "park_p",
+            "map_name": "Beckwith Park",
+            "playlist_id": "ranked-doubles",
+            "playlist_name": "Ranked Doubles",
+            "duration": 663,
+            "overtime": true,
+            "overtime_seconds": 291,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-14T20:19:46+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-14T20:20:15.574894+01:00",
+            "min_rank": {
+                "tier": 14,
+                "division": 1,
+                "name": "Diamond II Division 1",
+                "id": "diamond-2"
+            },
+            "max_rank": {
+                "tier": 14,
+                "division": 1,
+                "name": "Diamond II Division 1",
+                "id": "diamond-2"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 663.748,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "mvp": true,
+                        "rank": {
+                            "tier": 14,
+                            "division": 1,
+                            "name": "Diamond II Division 1",
+                            "id": "diamond-2"
+                        },
+                        "score": 952
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 663.748,
+                        "name": "KEP0797",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "b7a17be4f7010900"
+                        },
+                        "score": 678
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 663.748,
+                        "name": "matteo10neapolis",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "matteo10neapolis"
+                        },
+                        "score": 851
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 663.748,
+                        "name": "Beetle Juice",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198117895283"
+                        },
+                        "score": 506
+                    }
+                ]
+            }
+        },
+        {
+            "id": "24fbd544-8876-492a-92f8-f24840346b0b",
+            "link": "https://ballchasing.com/api/replays/24fbd544-8876-492a-92f8-f24840346b0b",
+            "rocket_league_id": "F2C8056043DC1DAAF3D78AB12DB10EB4",
+            "replay_title": "F2C8056043DC1DAAF3D78AB12DB10EB4",
+            "recorder": "Haze",
+            "map_code": "farm_p",
+            "map_name": "Farmstead",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 241,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-12T22:31:49+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-12T22:32:27.112744+01:00",
+            "min_rank": {
+                "tier": 14,
+                "division": 4,
+                "name": "Diamond II Division 4",
+                "id": "diamond-2"
+            },
+            "max_rank": {
+                "tier": 14,
+                "division": 4,
+                "name": "Diamond II Division 4",
+                "id": "diamond-2"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 241.846,
+                        "name": "MxS",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198394246645"
+                        },
+                        "score": 232
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 241.846,
+                        "name": "Gissa",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198204333691"
+                        },
+                        "score": 184
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 241.846,
+                        "name": "Ozzy Ox ",
+                        "id": {
+                            "platform": "epic",
+                            "id": "8fec8a90416944a8b508086a2ccbbff5"
+                        },
+                        "score": 76
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 5,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 241.846,
+                        "name": "Jeankev13",
+                        "id": {
+                            "platform": "epic",
+                            "id": "6e05bb52bd5348fa8d6b47e268972533"
+                        },
+                        "mvp": true,
+                        "score": 668
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 241.846,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 4,
+                            "name": "Diamond II Division 4",
+                            "id": "diamond-2"
+                        },
+                        "score": 284
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 241.846,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 154
+                    }
+                ]
+            }
+        },
+        {
+            "id": "f88e6d1d-86be-41dd-88ce-af25b00460eb",
+            "link": "https://ballchasing.com/api/replays/f88e6d1d-86be-41dd-88ce-af25b00460eb",
+            "rocket_league_id": "81C24F884C22A9DB95A2E19CDE1D4C50",
+            "replay_title": "81C24F884C22A9DB95A2E19CDE1D4C50",
+            "recorder": "Haze",
+            "map_code": "cs_day_p",
+            "map_name": "Champions Field (Day)",
+            "playlist_id": "ranked-doubles",
+            "playlist_name": "Ranked Doubles",
+            "duration": 415,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-12T20:51:28+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-12T20:52:05.201766+01:00",
+            "min_rank": {
+                "tier": 14,
+                "division": 2,
+                "name": "Diamond II Division 2",
+                "id": "diamond-2"
+            },
+            "max_rank": {
+                "tier": 14,
+                "division": 2,
+                "name": "Diamond II Division 2",
+                "id": "diamond-2"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 415.966,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 2,
+                            "name": "Diamond II Division 2",
+                            "id": "diamond-2"
+                        },
+                        "score": 895
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 415.966,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 230
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 8,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 415.966,
+                        "name": "ll-StepBro-ll",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "ll-StepBro-ll"
+                        },
+                        "mvp": true,
+                        "score": 1150
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 415.966,
+                        "name": "Ashyte",
+                        "id": {
+                            "platform": "epic",
+                            "id": "9fb18b0275c04b2ea26b3582f2e710d2"
+                        },
+                        "score": 446
+                    }
+                ]
+            }
+        },
+        {
+            "id": "1e34f044-dbaf-48fb-a0e1-0950c67ce5e9",
+            "link": "https://ballchasing.com/api/replays/1e34f044-dbaf-48fb-a0e1-0950c67ce5e9",
+            "rocket_league_id": "8324DCBE45911795E573AB8D83B7D5BE",
+            "replay_title": "8324DCBE45911795E573AB8D83B7D5BE",
+            "recorder": "Haze",
+            "map_code": "farm_p",
+            "map_name": "Farmstead",
+            "playlist_id": "ranked-doubles",
+            "playlist_name": "Ranked Doubles",
+            "duration": 391,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-12T20:41:38+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-12T20:42:18.59249+01:00",
+            "min_rank": {
+                "tier": 14,
+                "division": 2,
+                "name": "Diamond II Division 2",
+                "id": "diamond-2"
+            },
+            "max_rank": {
+                "tier": 14,
+                "division": 2,
+                "name": "Diamond II Division 2",
+                "id": "diamond-2"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 391.243,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 386
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 391.243,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 2,
+                            "name": "Diamond II Division 2",
+                            "id": "diamond-2"
+                        },
+                        "score": 322
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 6,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 391.243,
+                        "name": "Oreoo17",
+                        "id": {
+                            "platform": "epic",
+                            "id": "3328ebfbc0684a01b283257d77906d51"
+                        },
+                        "mvp": true,
+                        "score": 717
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 391.243,
+                        "name": "|Fonseca|",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198289875366"
+                        },
+                        "score": 615
+                    }
+                ]
+            }
+        },
+        {
+            "id": "f1d83e12-1f3c-4bde-bc3c-b73857805fa6",
+            "link": "https://ballchasing.com/api/replays/f1d83e12-1f3c-4bde-bc3c-b73857805fa6",
+            "rocket_league_id": "95D94CFF4DC337450431ED9582C3E53B",
+            "replay_title": "95D94CFF4DC337450431ED9582C3E53B",
+            "recorder": "Haze",
+            "map_code": "chn_stadium_day_p",
+            "map_name": "Forbidden Temple (Day)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 315,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-02T22:08:34+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-02T22:08:55.879616+01:00",
+            "min_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 315.571,
+                        "name": "CWF Mammouth",
+                        "id": {
+                            "platform": "epic",
+                            "id": "8e28b5a850194d04ba725ebc6cc0954a"
+                        },
+                        "mvp": true,
+                        "score": 276
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 315.571,
+                        "name": "CWF Lappp",
+                        "id": {
+                            "platform": "epic",
+                            "id": "7f97e5e0e0c84b379ac69ae433de59a0"
+                        },
+                        "score": 220
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 315.571,
+                        "name": "zah",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198253502876"
+                        },
+                        "score": 80
+                    }
+                ]
+            },
+            "orange": {
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 315.571,
+                        "name": "Lefou",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198014384942"
+                        },
+                        "score": 257
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 315.571,
+                        "name": "Arthulis",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198045905578"
+                        },
+                        "score": 174
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 315.571,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 2,
+                            "name": "Diamond III Division 2",
+                            "id": "diamond-3"
+                        },
+                        "score": 112
+                    }
+                ]
+            }
+        },
+        {
+            "id": "368dddb2-8b08-49a4-8bd7-eca23e55bf41",
+            "link": "https://ballchasing.com/api/replays/368dddb2-8b08-49a4-8bd7-eca23e55bf41",
+            "rocket_league_id": "597466C044B040EEC8AC60881ECAAAFD",
+            "replay_title": "597466C044B040EEC8AC60881ECAAAFD",
+            "recorder": "Haze",
+            "map_code": "utopiastadium_dusk_p",
+            "map_name": "Utopia Coliseum (Dusk)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 343,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-02T21:56:28+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-02T21:58:41.634607+01:00",
+            "min_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 2,
+                "name": "Diamond III Division 2",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 343.848,
+                        "name": "Chasi",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198135116445"
+                        },
+                        "mvp": true,
+                        "score": 527
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 343.848,
+                        "name": "mrPenYcefn",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "551cb2cbf6010900"
+                        },
+                        "score": 324
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 343.848,
+                        "name": "Komalaso",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198060906660"
+                        },
+                        "score": 274
+                    }
+                ]
+            },
+            "orange": {
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 343.848,
+                        "name": "Arthulis",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198045905578"
+                        },
+                        "score": 170
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 343.848,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 2,
+                            "name": "Diamond III Division 2",
+                            "id": "diamond-3"
+                        },
+                        "score": 114
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 343.848,
+                        "name": "Lefou",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198014384942"
+                        },
+                        "score": 86
+                    }
+                ]
+            }
+        },
+        {
+            "id": "4d4e4c6e-611b-45e4-8f3a-24560e29af37",
+            "link": "https://ballchasing.com/api/replays/4d4e4c6e-611b-45e4-8f3a-24560e29af37",
+            "rocket_league_id": "77DACEEE4937F7EF83B1FBB6ADC80A19",
+            "replay_title": "77DACEEE4937F7EF83B1FBB6ADC80A19",
+            "recorder": "Haze",
+            "map_code": "chn_stadium_day_p",
+            "map_name": "Forbidden Temple (Day)",
+            "playlist_id": "ranked-doubles",
+            "playlist_name": "Ranked Doubles",
+            "duration": 370,
+            "overtime": true,
+            "overtime_seconds": 38,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-01T23:34:37+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-01T23:35:18.607493+01:00",
+            "min_rank": {
+                "tier": 13,
+                "division": 3,
+                "name": "Diamond I Division 3",
+                "id": "diamond-1"
+            },
+            "max_rank": {
+                "tier": 13,
+                "division": 3,
+                "name": "Diamond I Division 3",
+                "id": "diamond-1"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 370.453,
+                        "name": "tutoyer_60110",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "tutoyer_60110"
+                        },
+                        "score": 341
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 370.453,
+                        "name": "Lvcassoff_",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "Lvcassoff_"
+                        },
+                        "score": 320
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 370.453,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "mvp": true,
+                        "rank": {
+                            "tier": 13,
+                            "division": 3,
+                            "name": "Diamond I Division 3",
+                            "id": "diamond-1"
+                        },
+                        "score": 455
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 370.453,
+                        "name": "kuno",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198204674695"
+                        },
+                        "score": 378
+                    }
+                ]
+            }
+        },
+        {
+            "id": "37c65f34-c643-4efc-b05f-010d3ec1d028",
+            "link": "https://ballchasing.com/api/replays/37c65f34-c643-4efc-b05f-010d3ec1d028",
+            "rocket_league_id": "0B981C844B9EEB05AEF52EB7AEC92B9C",
+            "replay_title": "... Je sais pas mais mate chelou",
+            "recorder": "Haze",
+            "map_code": "stadium_p",
+            "map_name": "DFH Stadium",
+            "playlist_id": "ranked-doubles",
+            "playlist_name": "Ranked Doubles",
+            "duration": 356,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-01T18:36:02+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-01T18:49:52.595927+01:00",
+            "min_rank": {
+                "tier": 13,
+                "division": 3,
+                "name": "Diamond I Division 3",
+                "id": "diamond-1"
+            },
+            "max_rank": {
+                "tier": 13,
+                "division": 3,
+                "name": "Diamond I Division 3",
+                "id": "diamond-1"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 356.127,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 13,
+                            "division": 3,
+                            "name": "Diamond I Division 3",
+                            "id": "diamond-1"
+                        },
+                        "score": 471
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 356.127,
+                        "name": "LoRDABooD",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198228685884"
+                        },
+                        "score": 246
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 356.127,
+                        "name": "Kaiza1706",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "bdf89c32f6010900"
+                        },
+                        "mvp": true,
+                        "score": 589
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 356.127,
+                        "name": "IDeadOwl",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198258847421"
+                        },
+                        "score": 414
+                    }
+                ]
+            }
+        },
+        {
+            "id": "479e087c-5b0c-4482-a503-de4049dededc",
+            "link": "https://ballchasing.com/api/replays/479e087c-5b0c-4482-a503-de4049dededc",
+            "rocket_league_id": "A00055E24380336DD902F58D6061BE28",
+            "replay_title": "Complique mais ca passe",
+            "recorder": "Haze",
+            "map_code": "utopiastadium_p",
+            "map_name": "Utopia Coliseum",
+            "playlist_id": "ranked-doubles",
+            "playlist_name": "Ranked Doubles",
+            "duration": 529,
+            "overtime": true,
+            "overtime_seconds": 154,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-03-01T18:46:39+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-03-01T18:48:41.735236+01:00",
+            "min_rank": {
+                "tier": 13,
+                "division": 3,
+                "name": "Diamond I Division 3",
+                "id": "diamond-1"
+            },
+            "max_rank": {
+                "tier": 13,
+                "division": 3,
+                "name": "Diamond I Division 3",
+                "id": "diamond-1"
+            },
+            "uploader": {
+                "steam_id": "76561198007191405",
+                "name": "Haze",
+                "profile_url": "https://steamcommunity.com/profiles/76561198007191405/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a6/a69ad7ccbadee531f3f6ff6a2c6bcc2c97edef55.jpg"
+            },
+            "blue": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 529.961,
+                        "name": "RTZ Lunix",
+                        "id": {
+                            "platform": "xbox",
+                            "id": "8912fcc3fa010900"
+                        },
+                        "score": 888
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 529.961,
+                        "name": "AUT_Hunter_AUT",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "AUT_Hunter_AUT"
+                        },
+                        "score": 515
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 529.961,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "mvp": true,
+                        "rank": {
+                            "tier": 13,
+                            "division": 3,
+                            "name": "Diamond I Division 3",
+                            "id": "diamond-1"
+                        },
+                        "score": 555
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 529.961,
+                        "name": "PastaWithSalt",
+                        "id": {
+                            "platform": "epic",
+                            "id": "ceacfb9a33e1449787ba7fb8bec0eb96"
+                        },
+                        "score": 496
+                    }
+                ]
+            }
+        },
+        {
+            "id": "f701b19e-8bcc-40ba-a261-ab7d97f7f095",
+            "link": "https://ballchasing.com/api/replays/f701b19e-8bcc-40ba-a261-ab7d97f7f095",
+            "rocket_league_id": "A53D49C44CB3CEF02F7BF38312B7B2BA",
+            "replay_title": "allo",
+            "recorder": "Kromlek",
+            "map_code": "neotokyo_standard_p",
+            "map_name": "Neo Tokyo (Standard)",
+            "duration": 333,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-02-28T23:08:03Z",
+            "date_has_tz": false,
+            "visibility": "public",
+            "created": "2021-02-28T23:14:09.813152+01:00",
+            "uploader": {
+                "steam_id": "76561197991213990",
+                "name": "Kromlek",
+                "profile_url": "https://steamcommunity.com/profiles/76561197991213990/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/98/981514ea2f33101a2c588c711949c3c02729f5fe.jpg"
+            },
+            "blue": {
+                "name": "JEANKICKOFF",
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 333.61,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 375
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.61,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "score": 198
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.61,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 178
+                    }
+                ]
+            },
+            "orange": {
+                "name": "Showy Gizmo",
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 333.61,
+                        "name": "Zhellanz-",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198164018263"
+                        },
+                        "mvp": true,
+                        "score": 402
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.61,
+                        "name": "ArSpin",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198058046532"
+                        },
+                        "score": 350
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 333.61,
+                        "name": "DawN",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198264036176"
+                        },
+                        "score": 324
+                    }
+                ]
+            }
+        },
+        {
+            "id": "609a22d4-a9a9-4d43-bad3-853e9e3f6804",
+            "link": "https://ballchasing.com/api/replays/609a22d4-a9a9-4d43-bad3-853e9e3f6804",
+            "rocket_league_id": "CE494A5047486DAEA73259B4584C90AC",
+            "replay_title": "2021-02-28.22.12 TTV Ze!ke_RL Ranked Standard Win",
+            "map_code": "park_rainy_p",
+            "map_name": "Beckwith Park (Stormy)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 374,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-02-28T22:12:25+01:00",
+            "date_has_tz": true,
+            "visibility": "public",
+            "created": "2021-02-28T22:12:23.223573+01:00",
+            "min_rank": {
+                "tier": 11,
+                "division": 2,
+                "name": "Platinum II Division 2",
+                "id": "platinum-2"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 1,
+                "name": "Diamond III Division 1",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561198079611364",
+                "name": "Ze!ke",
+                "profile_url": "https://steamcommunity.com/profiles/76561198079611364/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/64/64bb4a9a2321ece009d75826ab8cb6e6404c3bd6.jpg"
+            },
+            "blue": {
+                "goals": 5,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 374.076,
+                        "name": "iSox2.0",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198207862856"
+                        },
+                        "mvp": true,
+                        "rank": {
+                            "tier": 15,
+                            "division": 1,
+                            "name": "Diamond III Division 1",
+                            "id": "diamond-3"
+                        },
+                        "score": 498
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 374.076,
+                        "name": "VillBassen2.0",
+                        "id": {
+                            "platform": "epic",
+                            "id": "d3b5c9fe59e04858bbb864abb266cad5"
+                        },
+                        "rank": {
+                            "tier": 13,
+                            "division": 3,
+                            "name": "Diamond I Division 3",
+                            "id": "diamond-1"
+                        },
+                        "score": 454
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 374.076,
+                        "name": "TTV Ze!ke_RL",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561199063269449"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 1,
+                            "name": "Diamond II Division 1",
+                            "id": "diamond-2"
+                        },
+                        "score": 408
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 374.076,
+                        "name": "Jeankev13",
+                        "id": {
+                            "platform": "epic",
+                            "id": "6e05bb52bd5348fa8d6b47e268972533"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 3,
+                            "name": "Diamond II Division 3",
+                            "id": "diamond-2"
+                        },
+                        "score": 276
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 374.076,
+                        "name": "Ke1ma",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198190266941"
+                        },
+                        "rank": {
+                            "tier": 11,
+                            "division": 2,
+                            "name": "Platinum II Division 2",
+                            "id": "platinum-2"
+                        },
+                        "score": 226
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 374.076,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 4,
+                            "name": "Diamond II Division 4",
+                            "id": "diamond-2"
+                        },
+                        "score": 194
+                    }
+                ]
+            }
+        },
+        {
+            "id": "79be2964-de36-40f7-a38f-dda0f52fd0ef",
+            "link": "https://ballchasing.com/api/replays/79be2964-de36-40f7-a38f-dda0f52fd0ef",
+            "rocket_league_id": "76C37120417F942CC489D8924D496B58",
+            "replay_title": "2021-02-18.21.40 Soon Ranked Standard Loss",
+            "map_code": "eurostadium_night_p",
+            "map_name": "Mannfield (Night)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 250,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-02-18T21:40:12Z",
+            "date_has_tz": false,
+            "visibility": "public",
+            "created": "2021-02-18T21:38:40.845242+01:00",
+            "uploader": {
+                "steam_id": "76561197967680519",
+                "name": "Soon",
+                "profile_url": "https://steamcommunity.com/profiles/76561197967680519/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/7b/7b2198f442dd51c6ab63a648643c24871f281482.jpg"
+            },
+            "blue": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 250.67,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "mvp": true,
+                        "score": 358
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 250.67,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 264
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 250.67,
+                        "name": "Jeankev13",
+                        "id": {
+                            "platform": "epic",
+                            "id": "6e05bb52bd5348fa8d6b47e268972533"
+                        },
+                        "score": 250
+                    }
+                ]
+            },
+            "orange": {
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 250.67,
+                        "name": "Soon",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197967680519"
+                        },
+                        "score": 313
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 250.67,
+                        "name": "Scop-KeRo",
+                        "id": {
+                            "platform": "ps4",
+                            "id": "Scop-KeRo"
+                        },
+                        "score": 205
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 250.67,
+                        "name": "oxy",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198262784698"
+                        },
+                        "score": 136
+                    }
+                ]
+            }
+        },
+        {
+            "id": "a5155b7a-b343-4088-a921-b82a0f3831b8",
+            "link": "https://ballchasing.com/api/replays/a5155b7a-b343-4088-a921-b82a0f3831b8",
+            "rocket_league_id": "5D9BA30B4CBBC8A76E56CD99842439BA",
+            "replay_title": "2021-01-11.23.45 RevanAce Ranked Standard Loss",
+            "map_code": "chn_stadium_p",
+            "map_name": "Forbidden Temple",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 375,
+            "overtime": false,
+            "season": 2,
+            "season_type": "free2play",
+            "date": "2021-01-11T23:45:23Z",
+            "date_has_tz": false,
+            "visibility": "public",
+            "created": "2021-01-11T23:45:21.034502+01:00",
+            "uploader": {
+                "steam_id": "76561198015070416",
+                "name": "RevanAce (KBM)",
+                "profile_url": "https://steamcommunity.com/id/revanace/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/f1/f14a1a89f9ddddf64d0e1de53d255e15b3c4f53d.jpg"
+            },
+            "blue": {
+                "goals": 5,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 375.567,
+                        "name": "KE1MASTER",
+                        "id": {
+                            "platform": "epic",
+                            "id": "7a3e362b694a413c985a74e8aecce38e"
+                        },
+                        "mvp": true,
+                        "score": 745
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 375.567,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 305
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 375.567,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 138
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 375.567,
+                        "name": "Er Cecilio",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198162527709"
+                        },
+                        "score": 417
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 375.567,
+                        "name": "RevanAce",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198015070416"
+                        },
+                        "score": 341
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 375.567,
+                        "name": "FABLE 2.2",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197994818184"
+                        },
+                        "score": 220
+                    }
+                ]
+            }
+        },
+        {
+            "id": "5f8b0b52-74cd-4753-af16-26ee8ecf5f21",
+            "link": "https://ballchasing.com/api/replays/5f8b0b52-74cd-4753-af16-26ee8ecf5f21",
+            "rocket_league_id": "B0306F634E98295B316955B96C632C4D",
+            "replay_title": "B0306F634E98295B316955B96C632C4D",
+            "map_code": "trainstation_p",
+            "map_name": "Urban Central",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 361,
+            "overtime": false,
+            "season": 11,
+            "date": "2019-08-24T01:50:45Z",
+            "date_has_tz": false,
+            "visibility": "public",
+            "created": "2020-12-15T20:55:41.161313+01:00",
+            "uploader": {
+                "steam_id": "76561197998729186",
+                "name": "chookity pok",
+                "profile_url": "https://steamcommunity.com/profiles/76561197998729186/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/3a/3ae5368d2e2c103dfe53fd813f22aaa1d3edd33d.jpg"
+            },
+            "blue": {
+                "goals": 4,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 361.574,
+                        "name": "Mouki",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198044257389"
+                        },
+                        "mvp": true,
+                        "score": 503
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 361.574,
+                        "name": "MASS T'EUR TRAYARDE",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 323
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 361.574,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 323
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 361.574,
+                        "name": "Lelouch",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198963946547"
+                        },
+                        "score": 348
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 361.574,
+                        "name": "MajonilloGaming",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198113222195"
+                        },
+                        "score": 282
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 361.574,
+                        "name": "romazzino",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197998729186"
+                        },
+                        "score": 156
+                    }
+                ]
+            }
+        },
+        {
+            "id": "1305ad1e-f518-458b-8de3-ce7928d086aa",
+            "link": "https://ballchasing.com/api/replays/1305ad1e-f518-458b-8de3-ce7928d086aa",
+            "rocket_league_id": "CBEEE1A04D67840CC94E2CAD08ABE902",
+            "replay_title": "CBEEE1A04D67840CC94E2CAD08ABE902",
+            "map_code": "trainstation_dawn_p",
+            "map_name": "Urban Central (Dawn)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 446,
+            "overtime": true,
+            "overtime_seconds": 93,
+            "season": 12,
+            "date": "2019-08-30T18:20:54Z",
+            "date_has_tz": false,
+            "visibility": "public",
+            "created": "2020-12-15T20:53:32.186182+01:00",
+            "uploader": {
+                "steam_id": "76561197998729186",
+                "name": "chookity pok",
+                "profile_url": "https://steamcommunity.com/profiles/76561197998729186/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/3a/3ae5368d2e2c103dfe53fd813f22aaa1d3edd33d.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 446.18,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 376
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 446.18,
+                        "name": "Dragoon",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198271913651"
+                        },
+                        "score": 320
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 446.18,
+                        "name": "MASS T'EUR TRAYARDE",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 212
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 446.18,
+                        "name": "Outchebe",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198299418496"
+                        },
+                        "mvp": true,
+                        "score": 626
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 446.18,
+                        "name": "Wheatley",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198307314760"
+                        },
+                        "score": 479
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 446.18,
+                        "name": "romazzino",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197998729186"
+                        },
+                        "score": 244
+                    }
+                ]
+            }
+        },
+        {
+            "id": "e697eac6-f6a7-4348-8862-711d7530729e",
+            "link": "https://ballchasing.com/api/replays/e697eac6-f6a7-4348-8862-711d7530729e",
+            "rocket_league_id": "CFF2782647ADE23CAA38238BD0DAF278",
+            "replay_title": "CFF2782647ADE23CAA38238BD0DAF278",
+            "recorder": "Snowmas",
+            "map_code": "stadium_day_p",
+            "map_name": "DFH Stadium (Day)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 341,
+            "overtime": false,
+            "season": 9,
+            "date": "2018-10-29T21:49:11Z",
+            "date_has_tz": false,
+            "visibility": "public",
+            "created": "2020-09-16T13:33:27.589923+02:00",
+            "uploader": {
+                "steam_id": "76561197977065189",
+                "name": "Snowmas",
+                "profile_url": "https://steamcommunity.com/profiles/76561197977065189/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/d8/d88e4b05939e2f4b4d10fa45c04e305470e78651.jpg"
+            },
+            "blue": {
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 341.005,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "score": 160
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 341.005,
+                        "name": "Dream",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198036861699"
+                        },
+                        "score": 145
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 341.005,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "score": 110
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 3,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 341.005,
+                        "name": "WillyBumBum #40",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197968411009"
+                        },
+                        "mvp": true,
+                        "score": 300
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 341.005,
+                        "name": "Snowmas",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197977065189"
+                        },
+                        "score": 190
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 341.005,
+                        "name": "josse",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198038137915"
+                        },
+                        "score": 160
+                    }
+                ]
+            }
+        },
+        {
+            "id": "3900098c-f0bd-4b49-81e2-4fc2fb0ca7ef",
+            "link": "https://ballchasing.com/api/replays/3900098c-f0bd-4b49-81e2-4fc2fb0ca7ef",
+            "rocket_league_id": "D65D55474FB1BD0CF221FB986AD0CEDE",
+            "replay_title": "2020-08-26.18.36 Yoyoboul Ranked Doubles Loss",
+            "map_code": "chn_stadium_p",
+            "map_name": "Forbidden Temple",
+            "playlist_id": "ranked-doubles",
+            "playlist_name": "Ranked Doubles",
+            "duration": 293,
+            "overtime": false,
+            "season": 14,
+            "date": "2020-08-26T18:36:48Z",
+            "date_has_tz": false,
+            "visibility": "public",
+            "created": "2020-08-26T18:36:47.993162+02:00",
+            "min_rank": {
+                "tier": 13,
+                "division": 4,
+                "name": "Diamond I Division 4",
+                "id": "diamond-1"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 1,
+                "name": "Diamond III Division 1",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561198396856365",
+                "name": "Yoyoboul",
+                "profile_url": "https://steamcommunity.com/profiles/76561198396856365/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg"
+            },
+            "blue": {
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 293.346,
+                        "name": "Jxnnis",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198976403926"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 1,
+                            "name": "Diamond III Division 1",
+                            "id": "diamond-3"
+                        },
+                        "score": 334
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 293.346,
+                        "name": "Yoyoboul",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198396856365"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 4,
+                            "name": "Diamond II Division 4",
+                            "id": "diamond-2"
+                        },
+                        "score": 92
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 293.346,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "mvp": true,
+                        "rank": {
+                            "tier": 13,
+                            "division": 4,
+                            "name": "Diamond I Division 4",
+                            "id": "diamond-1"
+                        },
+                        "score": 420
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 293.346,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 14,
+                            "division": 2,
+                            "name": "Diamond II Division 2",
+                            "id": "diamond-2"
+                        },
+                        "score": 374
+                    }
+                ]
+            }
+        },
+        {
+            "id": "26b7a8a7-b227-4820-8323-b8f2ad290312",
+            "link": "https://ballchasing.com/api/replays/26b7a8a7-b227-4820-8323-b8f2ad290312",
+            "rocket_league_id": "00B815F141D7D13A55C6C3A44E76EFCD",
+            "replay_title": "2020-08-19.21.13 Chub Ranked Standard Loss",
+            "map_code": "stadium_day_p",
+            "map_name": "DFH Stadium (Day)",
+            "playlist_id": "ranked-standard",
+            "playlist_name": "Ranked Standard",
+            "duration": 339,
+            "overtime": false,
+            "season": 14,
+            "date": "2020-08-19T21:13:28Z",
+            "date_has_tz": false,
+            "visibility": "public",
+            "created": "2020-08-19T22:13:33.058469+02:00",
+            "min_rank": {
+                "tier": 10,
+                "division": 1,
+                "name": "Platinum I Division 1",
+                "id": "platinum-1"
+            },
+            "max_rank": {
+                "tier": 15,
+                "division": 3,
+                "name": "Diamond III Division 3",
+                "id": "diamond-3"
+            },
+            "uploader": {
+                "steam_id": "76561198395971883",
+                "name": "Shushani",
+                "profile_url": "https://steamcommunity.com/id/Shushani/",
+                "avatar": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/c2/c2d37842d2fe919d941e0368e5bcf22a60f8b8e5.jpg"
+            },
+            "blue": {
+                "goals": 2,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 339.58,
+                        "name": "Kromlek",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561197991213990"
+                        },
+                        "mvp": true,
+                        "rank": {
+                            "tier": 15,
+                            "division": 2,
+                            "name": "Diamond III Division 2",
+                            "id": "diamond-3"
+                        },
+                        "score": 328
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 339.58,
+                        "name": "Haze",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198007191405"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 1,
+                            "name": "Diamond III Division 1",
+                            "id": "diamond-3"
+                        },
+                        "score": 264
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 339.58,
+                        "name": "Dragoon",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198271913651"
+                        },
+                        "rank": {
+                            "tier": 13,
+                            "division": 3,
+                            "name": "Diamond I Division 3",
+                            "id": "diamond-1"
+                        },
+                        "score": 259
+                    }
+                ]
+            },
+            "orange": {
+                "goals": 1,
+                "players": [
+                    {
+                        "start_time": 0,
+                        "end_time": 339.58,
+                        "name": "Chub",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561199065026755"
+                        },
+                        "rank": {
+                            "tier": 15,
+                            "division": 3,
+                            "name": "Diamond III Division 3",
+                            "id": "diamond-3"
+                        },
+                        "score": 390
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 339.58,
+                        "name": "Voxar",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198043984224"
+                        },
+                        "rank": {
+                            "tier": 10,
+                            "division": 4,
+                            "name": "Platinum I Division 4",
+                            "id": "platinum-1"
+                        },
+                        "score": 296
+                    },
+                    {
+                        "start_time": 0,
+                        "end_time": 339.58,
+                        "name": "Hola",
+                        "id": {
+                            "platform": "steam",
+                            "id": "76561198376447218"
+                        },
+                        "rank": {
+                            "tier": 10,
+                            "division": 1,
+                            "name": "Platinum I Division 1",
+                            "id": "platinum-1"
+                        },
+                        "score": 186
+                    }
+                ]
+            }
+        }
+    ],
+    "next": "https://ballchasing.com/api/replays?after=MS41OTc4NjgwMTMwNThlKzEyXzI2YjdhOGE3LWIyMjctNDgyMC04MzIzLWI4ZjJhZDI5MDMxMg%3D%3D&player-id=steam%3A76561198007191405"
+}
