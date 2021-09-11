@@ -8,10 +8,20 @@ const MovementSection = ({ rankData, movement }) => (
     <div className="flex flex-wrap text-center p-2">
       <DataCard
         title="Time supersonic speed"
-        dataToShow={movement.timeSupersonicSpeed}
+        dataToShow={movement.current.timeSupersonicSpeed}
+        compareData={movement.compared.timeSupersonicSpeed}
       />
-      <DataCard title="Time boost speed" dataToShow={movement.timeBoostSpeed} />
-      <DataCard title="Time slow speed" dataToShow={movement.timeSlowSpeed} />
+      <DataCard
+        title="Time boost speed"
+        dataToShow={movement.current.timeBoostSpeed}
+        compareData={movement.compared.timeBoostSpeed}
+      />
+      <DataCard
+        title="Time slow speed"
+        dataToShow={movement.current.timeSlowSpeed}
+        compareData={movement.compared.timeSlowSpeed}
+        reversedPourcentageColor
+      />
     </div>
   </>
 );

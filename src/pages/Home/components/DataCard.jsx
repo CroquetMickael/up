@@ -25,15 +25,41 @@ const getRankData = (dataToShow, compareData) => {
   }
   return "";
 };
-const DataCard = ({ title, dataToShow, compareData }) => (
+
+const getProgression = (dataToShow, compareData) => {
+  return (((dataToShow - compareData) / compareData) * 100).toFixed(2);
+};
+
+const getProgressionColor = (progression, reversedPourcentageColor) => {
+  if (progression > 0) {
+    return reversedPourcentageColor ? "text-red-400" : "text-brandSuccess";
+  } else {
+    return reversedPourcentageColor ? "text-brandSuccess" : "text-red-400";
+  }
+};
+const DataCard = ({
+  title,
+  dataToShow,
+  rankData,
+  compareData,
+  reversedPourcentageColor,
+}) => (
   <div className="p-4 sm:w-1/4 w-1/2">
     <div className="bg-white rounded-lg p-2 xl:p-6 shadow-xl">
       <h2
         className={`title-font font-medium sm:text-4xl text-3xl ${
-          compareData && getRankData(dataToShow, compareData)
+          rankData && getRankData(dataToShow, rankData)
         }`}
       >
-        {dataToShow}
+        {dataToShow}{" "}
+        <span
+          className={`text-sm ${getProgressionColor(
+            getProgression(dataToShow, compareData),
+            reversedPourcentageColor
+          )}`}
+        >
+          {getProgression(dataToShow, compareData)}%
+        </span>
       </h2>
       <p className="leading-relaxed font-bold">{title}</p>
     </div>
