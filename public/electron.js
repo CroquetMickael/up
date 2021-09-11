@@ -7,7 +7,6 @@ const electron = require("electron");
 // Module to control application life.
 const app = electron.app;
 
-
 app.whenReady().then(() => {
   installExtension(REACT_DEVELOPER_TOOLS)
     .then((name) => console.log(`Added Extension:  ${name}`))
@@ -29,7 +28,10 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    webPreferences: { webSecurity: false },
+    webPreferences: {
+      webSecurity: false,
+      preload: __dirname + "/preload.js",
+    },
   });
 
   // and load the index.html of the app.

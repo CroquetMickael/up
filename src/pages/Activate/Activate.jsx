@@ -28,7 +28,17 @@ const Activate = () => {
     if (hasError) {
       console.log("error");
     }
-  }, [DBSave, DBSet, apiKey, data?.name, data?.steam_id, hasError, isResolved, resetFetchState, setUser]);
+  }, [
+    DBSave,
+    DBSet,
+    apiKey,
+    data?.name,
+    data?.steam_id,
+    hasError,
+    isResolved,
+    resetFetchState,
+    setUser,
+  ]);
 
   const getUserInfo = () => {
     get("/");
@@ -48,27 +58,45 @@ const Activate = () => {
                 <p>
                   In order for the application to work properly, we retrive the
                   data from <a href="https://ballchasing.com">BallChasing</a>,
-                  please insert your API KEY
+                  please insert your UPLOAD TOKEN
+                </p>
+                <p className="mt-4">
+                  You can retrieve your UPLOAD TOKEN here:{" "}
+                  <button
+                    type="button"
+                    className="text-blue-500 hover:text-blue-800 hover:underline"
+                    onClick={() =>
+                      window.electron.openExternal(
+                        "https://ballchasing.com/upload"
+                      )
+                    }
+                  >
+                    Click me !
+                  </button>
                 </p>
               </div>
               <div>
                 <div className="flex -mx-3">
                   <div className="w-full px-3 mb-5">
-                    <label for="" className="text-xs font-semibold px-1">
+                    <label
+                      htmlFor="apiKey"
+                      className="text-xs font-semibold px-1"
+                    >
                       Api Key
                     </label>
                     <div className="flex">
                       <input
-                        class="appearance-none bg-white border-2 rounded w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                        id="apiKey"
+                        className="appearance-none bg-white border-2 rounded w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                         type="text"
-                        placeholder="Jane Doe"
+                        placeholder="Ball Chasing API KEY"
                         aria-label="Full name"
                         onChange={(e) => {
                           setApiKey(e.target.value);
                         }}
                       />
                       <button
-                        class="flex-shrink-0 bg-green-500 hover:bg-green-700 border-green-500 hover:border-green-700 text-sm border-4 text-white py-1 px-2 rounded"
+                        className="flex-shrink-0 bg-green-500 hover:bg-green-700 border-green-500 hover:border-green-700 text-sm border-4 text-white py-1 px-2 rounded"
                         type="button"
                         onClick={() => getUserInfo()}
                       >
