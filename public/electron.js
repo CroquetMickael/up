@@ -4,6 +4,7 @@ const {
 } = require("electron-devtools-installer");
 
 const electron = require("electron");
+const { ipcMain } = require("electron");
 // Module to control application life.
 const app = electron.app;
 
@@ -28,6 +29,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    frame: false,
     webPreferences: {
       webSecurity: false,
       preload: __dirname + "/preload.js",
@@ -44,7 +46,6 @@ function createWindow() {
       slashes: true,
     });
   mainWindow.loadURL(startUrl);
-
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
 
@@ -54,6 +55,22 @@ function createWindow() {
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
     mainWindow = null;
+  });
+
+  ipcMain.on("maximize-me", function () {
+    if (mainWindow.isMaximized()) {
+      mainWindow.unmaximize();
+    } else {
+      mainWindow.maximize();
+    }
+  });
+
+  ipcMain.on("minimize-me", function () {
+    mainWindow.minimize();
+  });
+
+  ipcMain.on("close-me", function () {
+    mainWindow.destroy();
   });
 }
 
