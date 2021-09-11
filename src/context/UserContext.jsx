@@ -9,6 +9,7 @@ const UserContextProvider = ({ children }) => {
   const { push } = useHistory();
   const { DBGet } = useDB();
   const [user, setUser] = useState(DBGet("user").value());
+  const [isFirstLoading, setIsFirstLoading] = useState(true);
 
   useEffect(() => {
     if (!user) {
@@ -17,7 +18,9 @@ const UserContextProvider = ({ children }) => {
   }, [push, user]);
 
   return (
-    <UserContext.Provider value={{ user, setUser }}>
+    <UserContext.Provider
+      value={{ user, setUser, isFirstLoading, setIsFirstLoading }}
+    >
       {children}
     </UserContext.Provider>
   );
