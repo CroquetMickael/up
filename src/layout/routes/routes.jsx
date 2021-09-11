@@ -4,22 +4,25 @@ import { UploadReplay } from "../../components/UploadReplay/UploadReplay";
 import { UserContextProvider } from "../../context/UserContext";
 import { Activate } from "../../pages/Activate/Activate";
 import { Home } from "../../pages/Home/Home";
+import { Layout } from "../Layout";
 
 const Routes = () => (
-  <BrowserRouter>
-    <UserContextProvider>
-      <Switch>
-        <Route path="/activate">
-          <Activate />
-        </Route>
-        <UploadReplay>
-          <Route path="/">
-            <Home />
+  <Layout>
+    <BrowserRouter>
+      <UserContextProvider>
+        <Switch>
+          <Route exact path="/activate">
+            <Activate />
           </Route>
-        </UploadReplay>
-      </Switch>
-    </UserContextProvider>
-  </BrowserRouter>
+          <UploadReplay>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </UploadReplay>
+        </Switch>
+      </UserContextProvider>
+    </BrowserRouter>
+  </Layout>
 );
 
 export { Routes };
