@@ -1,6 +1,6 @@
 const fixedNumber = (value) => (value / 10).toFixed(1);
-const useReplayData = ({ games, user }) => {
-  const getBoost = () => {
+const useReplayData = ({ lastGames, comparedGames, user }) => {
+  const getBoost = (games) => {
     let boostPerMinute = 0;
     let timeZeroBoost = 0;
     let timeMaxBoost = 0;
@@ -45,7 +45,7 @@ const useReplayData = ({ games, user }) => {
     };
   };
 
-  const getOverfill = () => {
+  const getOverfill = (games) => {
     let overfill = 0;
     let overfillStolen = 0;
     games?.forEach((game) => {
@@ -70,7 +70,7 @@ const useReplayData = ({ games, user }) => {
     };
   };
 
-  const getMovement = () => {
+  const getMovement = (games) => {
     let timeSupersonicSpeed = 0;
     let timeSlowSpeed = 0;
     let timeBoostSpeed = 0;
@@ -102,8 +102,14 @@ const useReplayData = ({ games, user }) => {
   };
 
   return {
-    boost: { ...getBoost(), ...getOverfill() },
-    movement: getMovement(),
+    boost: {
+      current: { ...getBoost(lastGames), ...getOverfill(lastGames) },
+      compared: { ...getBoost(comparedGames), ...getOverfill(comparedGames) },
+    },
+    movement: {
+      current: getMovement(lastGames),
+      compared: getMovement(comparedGames),
+    },
   };
 };
 

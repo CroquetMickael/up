@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useRef } from "react";
 import "./Home.css";
 import { useEffect, useState } from "react/cjs/react.development";
 import { useUser } from "../../context/UserContext";
@@ -20,16 +20,24 @@ function Home() {
   } = useFetch();
   const { get: getRanksData, data: rankData } = useFetch();
   const { DBSet, DBSave, DBGet } = useDB();
-  const [datas, setDatas] = useState(DBGet("replaysDatas").value());
-
-  const { boost, movement } = useReplayData({ user, games: datas });
+  const [lastGames, setLastGames] = useState(
+    DBGet("lastReplays").value() || []
+  );
+  const [comparedGames, setComparedGames] = useState(
+    DBGet("comparedReplays").value() || []
+  );
+  const { boost, movement } = useReplayData({
+    lastGames,
+    comparedGames,
+    user,
+  });
 
   const limiter = useMemo(
     () =>
       new Bottleneck({
         minTime: 500,
         maxConcurrent: 1,
-        reservoir: 10,
+        reservoir: 20,
         reservoirRefreshInterval: 1000,
         reservoirRefreshAmount: 2,
         trackDoneStatus: true,
@@ -43,6 +51,9 @@ function Home() {
 
   useEffect(() => {
     if (isResolved && isFirstLoading) {
+      DBSet("lastReplays", []);
+      DBSet("comparedReplays", []);
+      DBSave();
       getReplaysData({
         data,
         getReplayData,
@@ -72,16 +83,29 @@ function Home() {
   }, [getRanksData]);
 
   useEffect(() => {
-    const replaysData = DBGet("replaysDatas").value() || [];
+    const replaysData = DBGet("lastReplays").value() || [];
+    const comparedReplays = DBGet("comparedReplays").value() || [];
+    const gamesId = DBGet("gamesId").value();
+    const doneLimiter = limiter.counts().DONE === 20;
+
     if (replayResolved) {
-      UpdateReplaysData({ replayData, replaysData, DBSet, DBSave });
-      const doneLimiter = limiter.counts().DONE === 10;
-      const maxReplayFound = replaysData.length === 10;
-      if (doneLimiter && maxReplayFound) {
-        setDatas(replaysData);
-      }
+      UpdateReplaysData({
+        replayData,
+        replaysData,
+        DBSet,
+        DBSave,
+        comparedReplays,
+        gamesId,
+      });
     }
-  }, [DBGet, DBSave, DBSet, datas, limiter, replayData, replayResolved]);
+
+    const maxReplayFound = replaysData.length === 10;
+    const maxComparedReplays = comparedReplays.length === 10;
+    if (doneLimiter && maxReplayFound && maxComparedReplays) {
+      setLastGames(replaysData);
+      setComparedGames(comparedReplays);
+    }
+  }, [DBGet, DBSave, DBSet, limiter, replayData, replayResolved]);
 
   return (
     <>
