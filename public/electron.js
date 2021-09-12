@@ -4,7 +4,7 @@ const {
 } = require("electron-devtools-installer");
 
 const electron = require("electron");
-const { ipcMain } = require("electron");
+const { ipcMain, Menu, Tray, Notification } = require("electron");
 // Module to control application life.
 const app = electron.app;
 
@@ -23,13 +23,19 @@ const url = require("url");
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
+let tray;
+let notificationSent = false;
 
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
+    minWidth: 800,
+    minHeight: 600,
     width: 800,
     height: 600,
     frame: false,
+    title: "Up",
+    icon: __dirname + "./logo192.png",
     webPreferences: {
       webSecurity: false,
       preload: __dirname + "/preload.js",
@@ -70,14 +76,43 @@ function createWindow() {
   });
 
   ipcMain.on("close-me", function () {
-    mainWindow.destroy();
+    if(!notificationSent) {
+      new Notification({
+        title: "Up",
+        body: "Up is hidden, close it from tray icons",
+
+      }).show();
+      notificationSent = true;
+    }
+    mainWindow.hide();
   });
+
 }
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on("ready", createWindow);
+app.on("ready", () => {
+  tray = new Tray(__dirname + './logo192.png')
+  const contextMenu = Menu.buildFromTemplate([
+    { label: 'Show App', click:  function(){
+        mainWindow.show();
+    } },
+    { label: 'Quit', click:  function(){
+        app.isQuiting = true;
+        mainWindow.destroy();
+        app.quit();
+    } }
+])
+  tray.setToolTip('Up')
+  tray.setContextMenu(contextMenu);
+  tray.on('click', () => {
+    mainWindow.show();
+  });
+  createWindow()
+})
+
 
 // Quit when all windows are closed.
 app.on("window-all-closed", function () {
