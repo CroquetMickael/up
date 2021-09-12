@@ -1,9 +1,19 @@
 import React from "react";
+import { useEffect } from "react/cjs/react.development";
+import { useReplays } from "../../context/Replays/ReplaysContext";
 import { useFetch } from "../../hooks/useFetch";
 import { Modal } from "../Modal/Modal";
 
 const UploadForm = ({ modalOpen, toggleModal, file }) => {
-  const { post } = useFetch();
+  const { post, isResolved, data } = useFetch();
+  const {
+    get,
+    isResolved: retrieveReplayData,
+    data: replayData,
+    resetFetchState,
+  } = useFetch();
+  const { lastGames, setLastGames, comparedGames, setComparedGames } =
+    useReplays();
 
   const sendFile = () => {
     const formData = new FormData();
@@ -12,6 +22,37 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
       body: formData,
     });
   };
+
+  useEffect(() => {
+    if (isResolved) {
+      const id = data.id;
+      setTimeout(() => {
+        get(`/replays/${id}`);
+      }, 5000);
+    }
+  }, [data?.id, get, isResolved]);
+
+  useEffect(() => {
+    if (retrieveReplayData) {
+      const replaysData = lastGames;
+      const comparedReplays = comparedGames;
+      const lastReplay = replaysData.shift();
+      comparedReplays.shift();
+      comparedReplays.push(lastReplay);
+      replaysData.push(replayData);
+      setLastGames([...replaysData]);
+      setComparedGames([...comparedReplays]);
+      resetFetchState();
+    }
+  }, [
+    comparedGames,
+    lastGames,
+    replayData,
+    resetFetchState,
+    retrieveReplayData,
+    setComparedGames,
+    setLastGames,
+  ]);
 
   return (
     <Modal modalOpen={modalOpen} toggleModal={toggleModal}>
