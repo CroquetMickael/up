@@ -11,21 +11,21 @@ const Routes = () => (
   <Layout>
     <BrowserRouter>
       <UserContextProvider>
-        <ReplayContextProvider>
-          <Switch>
-            <Route exact path="/activate">
-              <Activate />
-            </Route>
+        <Switch>
+          <Route exact path="/activate">
+            <Activate />
+          </Route>
+          <ReplayContextProvider>
             <UploadReplay>
               <Route exact path="/">
                 <Home />
               </Route>
             </UploadReplay>
-          </Switch>
-        </ReplayContextProvider>
+          </ReplayContextProvider>
+        </Switch>
       </UserContextProvider>
     </BrowserRouter>
-  </Layout>
+  </Layout >
 );
 
 export { Routes };
