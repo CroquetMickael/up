@@ -27,7 +27,8 @@ const getRankData = (dataToShow, compareData) => {
 };
 
 const getProgression = (dataToShow, compareData) => {
-  return (((dataToShow - compareData) / compareData) * 100).toFixed(2);
+  const value = (((dataToShow - compareData) / compareData) * 100).toFixed(2);
+  return value > 0 ? `+${value}` : value
 };
 
 const getProgressionColor = (progression, reversedPourcentageColor) => {
@@ -46,21 +47,25 @@ const DataCard = ({
 }) => (
   <div className="p-4 sm:w-1/4 w-1/2">
     <div className="bg-white rounded-lg p-2 xl:p-6 shadow-xl">
-      <h2
-        className={`title-font font-medium sm:text-4xl text-3xl ${
-          rankData && getRankData(dataToShow, rankData)
-        }`}
-      >
-        {dataToShow}{" "}
-        <span
-          className={`text-sm ${getProgressionColor(
-            getProgression(dataToShow, compareData),
-            reversedPourcentageColor
-          )}`}
+      <div className="flex flex-col">
+        <h2
+          className={`title-font font-medium sm:text-4xl text-3xl ${rankData && getRankData(dataToShow, rankData)
+            }`}
         >
-          {getProgression(dataToShow, compareData)}%
-        </span>
-      </h2>
+          {dataToShow}
+        </h2>
+        <div>
+          <span
+            className={`text-sm pl-2 ${getProgressionColor(
+              getProgression(dataToShow, compareData),
+              reversedPourcentageColor
+            )}`}
+          >
+            {getProgression(dataToShow, compareData)}%
+          </span>
+
+        </div>
+      </div>
       <p className="leading-relaxed font-bold">{title}</p>
     </div>
   </div>

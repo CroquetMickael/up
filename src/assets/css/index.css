@@ -13,3 +13,19 @@ body {
 .noDrag {
   -webkit-app-region: no-drag;
 }
+
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #3434588f;
+}
+
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2428e2;
+  border-radius: 15%;
+}
