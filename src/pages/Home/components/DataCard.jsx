@@ -1,15 +1,7 @@
 import React from "react";
+import { rankColors } from "../../../helpers/colorsHelpers";
 
-const colors = {
-  1: "text-yellow-800",
-  4: "text-gray-400",
-  7: "text-yellow-400",
-  10: "text-blue-400",
-  13: "text-blue-600",
-  16: "text-purple-400",
-  19: "text-pink-300",
-  999: "text-red-400",
-};
+
 const getRankData = (dataToShow, compareData) => {
   const rankDatas = compareData?.points;
   const lastRank = rankDatas
@@ -18,9 +10,9 @@ const getRankData = (dataToShow, compareData) => {
   const index = rankDatas.indexOf(lastRank);
   if (index !== -1) {
     if (rankDatas.length > index + 1) {
-      return colors[rankDatas[index + 1][0]];
+      return rankColors[rankDatas[index + 1][0]];
     } else if (lastRank) {
-      return colors[lastRank[0]];
+      return rankColors[lastRank[0]];
     }
   }
   return "";
