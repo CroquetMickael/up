@@ -1,11 +1,13 @@
-import React from "react";
-import { useEffect } from "react/cjs/react.development";
+import React, { useEffect, useRef, useState } from "react";
 import { useReplays } from "../../context/Replays/ReplaysContext";
 import { useFetch } from "../../hooks/useFetch";
 import { Modal } from "../Modal/Modal";
 
 const UploadForm = ({ modalOpen, toggleModal, file }) => {
+  const [visibility, setVisibility] = useState("public");
   const { post, isResolved, data } = useFetch();
+  const ThirtySeconds = 30000;
+  let retries = useRef(0);
   const {
     get,
     isResolved: retrieveReplayData,
@@ -18,7 +20,7 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
   const sendFile = () => {
     const formData = new FormData();
     formData.append("file", file);
-    post("/v2/upload", {
+    post(`/v2/upload?visibility=${visibility}`, {
       body: formData,
     });
   };
@@ -28,12 +30,13 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
       const id = data.id;
       setTimeout(() => {
         get(`/replays/${id}`);
-      }, 5000);
+        retries.current += 1;
+      }, ThirtySeconds);
     }
   }, [data?.id, get, isResolved]);
 
   useEffect(() => {
-    if (retrieveReplayData) {
+    if (retrieveReplayData && replayData.status === "ok") {
       const replaysData = lastGames;
       const comparedReplays = comparedGames;
       const lastReplay = replaysData.shift();
@@ -43,16 +46,14 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
       setLastGames([...replaysData]);
       setComparedGames([...comparedReplays]);
       resetFetchState();
+    } else if (retrieveReplayData && retries.current <= 9) {
+      const id = data?.id;
+      setTimeout(() => {
+        get(`/replays/${id}`);
+        retries.current += 1;
+      }, ThirtySeconds);
     }
-  }, [
-    comparedGames,
-    lastGames,
-    replayData,
-    resetFetchState,
-    retrieveReplayData,
-    setComparedGames,
-    setLastGames,
-  ]);
+  }, [comparedGames, data?.id, get, lastGames, replayData, resetFetchState, retrieveReplayData, setComparedGames, setLastGames]);
 
   return (
     <Modal modalOpen={modalOpen} toggleModal={toggleModal}>
@@ -66,6 +67,8 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
             className="form-radio h-5 w-5 text-gray-600"
             defaultChecked
             name="visibility"
+            value="public"
+            onChange={(e) => setVisibility(e.target.value)}
           />
           <span className="ml-2 text-gray-700">
             <b>Public</b>: visible to everyone, even not logged-in users
@@ -76,6 +79,8 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
             type="radio"
             className="form-radio h-5 w-5 text-orange-600"
             name="visibility"
+            value="unlisted"
+            onChange={(e) => setVisibility(e.target.value)}
           />
           <span className="ml-2 text-gray-700">
             <b>Unlisted</b>: only you and the people with the link to the replay
@@ -88,6 +93,8 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
             type="radio"
             name="visibility"
             className="form-radio h-5 w-5 text-orange-600"
+            value="private"
+            onChange={(e) => setVisibility(e.target.value)}
           />
           <span className="ml-2 text-gray-700">
             <b>Private</b>: only you can view the replay. Doesn't appear in the
