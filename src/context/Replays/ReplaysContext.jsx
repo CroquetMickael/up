@@ -6,6 +6,7 @@ import React, {
   useMemo,
   useState,
 } from "react";
+import { Loadable } from "../../components/Loadable/Loadable";
 import { useFetch } from "../../hooks/useFetch";
 import { useUser } from "../UserContext";
 import { getReplaysData, UpdateReplaysData } from "./Replays.service";
@@ -88,7 +89,9 @@ const ReplayContextProvider = ({ children }) => {
     <ReplayContext.Provider
       value={{ lastGames, setLastGames, comparedGames, setComparedGames }}
     >
-      {children}
+      <Loadable progress={{ value: limiter.counts().DONE, max: 20 }} isDone={limiter.counts().DONE >=20}>
+        {children}
+      </Loadable>
     </ReplayContext.Provider>
   );
 };
