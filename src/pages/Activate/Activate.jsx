@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import React, { useState, useEffect } from "react";
 import { useFetch } from "../../hooks/useFetch";
 import { useUser } from "../../context/UserContext";
 import { useDB } from "../../hooks/useDB";
