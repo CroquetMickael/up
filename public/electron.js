@@ -76,7 +76,7 @@ function createWindow() {
   });
 
   ipcMain.on("close-me", function () {
-    if(!notificationSent) {
+    if (!notificationSent) {
       new Notification({
         title: "Up",
         body: "Up is hidden, close it from tray icons",
@@ -96,15 +96,19 @@ function createWindow() {
 app.on("ready", () => {
   tray = new Tray(__dirname + './logo192.png')
   const contextMenu = Menu.buildFromTemplate([
-    { label: 'Show App', click:  function(){
+    {
+      label: 'Show App', click: function () {
         mainWindow.show();
-    } },
-    { label: 'Quit', click:  function(){
+      }
+    },
+    {
+      label: 'Quit', click: function () {
         app.isQuiting = true;
         mainWindow.destroy();
         app.quit();
-    } }
-])
+      }
+    }
+  ])
   tray.setToolTip('Up')
   tray.setContextMenu(contextMenu);
   tray.on('click', () => {
