@@ -1,10 +1,12 @@
 import React from "react";
+import { ReactECharts } from "../../../components/Charts/Charts";
+import { rankColorsHex } from "../../../helpers/colorsHelpers";
 import { DataCard } from "../components/DataCard";
 import { DataTitle } from "../components/DataTitle";
 
 const BoostSection = ({ rankData, boost }) => (
   <>
-    <DataTitle Title="Boost Management" />
+    <DataTitle Title="Boost Management dashboard" />
     <div className="flex flex-wrap text-center p-2">
       <DataCard
         title="BPM"
@@ -60,6 +62,59 @@ const BoostSection = ({ rankData, boost }) => (
         compareData={boost.compared.stolenSmall}
         rankData={rankData && rankData[9]}
       />
+    </div>
+
+    <div>
+      <DataTitle Title="Boost Management stats by ranks" />
+      <div className="flex flex-wrap">
+        <ReactECharts title="BPM" option={{
+          xAxis: {
+            type: 'category',
+            data: ['Bronze', 'Silver', 'Gold', 'Platinium', 'Diamond', 'Champion', 'Grand Champion', 'Pros'],
+            axisLabel: {
+              interval: 0,
+              textStyle: {
+                color: 'white'
+              }
+            }
+          },
+          yAxis: {
+            type: 'value',
+            splitLine: {
+              lineStyle: {
+                color: 'white'
+              }
+            }
+          },
+          series: [{
+            data: rankData && rankData[10].points.map(data => {
+              return {
+                value: data[2].toFixed(0), itemStyle: {
+                  color: rankColorsHex[data[0]]
+                }
+              }
+            }),
+            type: 'bar',
+            markLine: {
+              label: {
+                normal: {
+                  show: true,
+                  position: 'end',
+                  formatter: `You : ${boost.current.bpm}`,
+                  backgroundColor: "transparent",
+                  color: "#00cc8a"
+                }
+              },
+              data: [{ name: 'You', yAxis: boost.current.bpm }],
+              lineStyle: {
+                type: "solid",
+                color: "#00cc8a"
+              }
+            },
+            barWidth: '60%'
+          }]
+        }} />
+      </div>
     </div>
   </>
 );
