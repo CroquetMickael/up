@@ -1,13 +1,13 @@
 const fixedNumber = (value) => (value / 10).toFixed(1);
 const useReplayData = ({ lastGames, comparedGames, user }) => {
   const getBoost = (games) => {
-    let boostPerMinute = 0;
-    let timeZeroBoost = 0;
-    let timeMaxBoost = 0;
-    let stolenBig = 0;
-    let stolenSmall = 0;
-    let takenBig = 0;
-    let takenSmall = 0;
+    let boostPerMinute = { value: 0, gamesValue: [] };
+    let timeZeroBoost = { value: 0, gamesValue: [] };
+    let timeMaxBoost = { value: 0, gamesValue: [] };
+    let stolenBig = { value: 0, gamesValue: [] };
+    let stolenSmall = { value: 0, gamesValue: [] };
+    let takenBig = { value: 0, gamesValue: [] };
+    let takenSmall = { value: 0, gamesValue: [] };
     games?.forEach((game) => {
       const playerBlue = game.blue.players.find(
         (player) => player.id.id === user.id
@@ -17,37 +17,65 @@ const useReplayData = ({ lastGames, comparedGames, user }) => {
       );
 
       if (playerBlue) {
-        boostPerMinute += playerBlue.stats.boost.bpm;
-        timeZeroBoost += playerBlue.stats.boost.time_zero_boost;
-        timeMaxBoost += playerBlue.stats.boost.time_full_boost;
-        stolenBig += playerBlue.stats.boost.count_stolen_big;
-        stolenSmall += playerBlue.stats.boost.count_stolen_small;
-        takenBig += playerBlue.stats.boost.count_collected_big;
-        takenSmall += playerBlue.stats.boost.count_collected_small;
+        //BPM
+        boostPerMinute.value += playerBlue.stats.boost.bpm;
+        boostPerMinute.gamesValue.push(playerBlue.stats.boost.bpm);
+        //TZB
+        timeZeroBoost.value += playerBlue.stats.boost.time_zero_boost;
+        timeZeroBoost.gamesValue.push(playerBlue.stats.boost.time_zero_boost);
+
+        timeMaxBoost.value += playerBlue.stats.boost.time_full_boost;
+        timeMaxBoost.gamesValue.push(playerBlue.stats.boost.time_full_boost);
+        //Stolen Big
+        stolenBig.value += playerBlue.stats.boost.count_stolen_big;
+        stolenBig.gamesValue.push(playerBlue.stats.boost.count_stolen_big);
+
+        stolenSmall.value += playerBlue.stats.boost.count_stolen_small;
+        stolenSmall.gamesValue.push(playerBlue.stats.boost.count_stolen_small);
+
+        takenBig.value += playerBlue.stats.boost.count_collected_big;
+        takenBig.gamesValue.push(playerBlue.stats.boost.count_collected_big);
+
+        takenSmall.value += playerBlue.stats.boost.count_collected_small;
+        takenSmall.gamesValue.push(playerBlue.stats.boost.count_collected_small);
+
       } else {
-        boostPerMinute += playerOrange.stats.boost.bpm;
-        timeZeroBoost += playerOrange.stats.boost.time_zero_boost;
-        timeMaxBoost += playerOrange.stats.boost.time_full_boost;
-        stolenBig += playerOrange.stats.boost.count_stolen_big;
-        stolenSmall += playerOrange.stats.boost.count_stolen_small;
-        takenBig += playerOrange.stats.boost.count_collected_big;
-        takenSmall += playerOrange.stats.boost.count_collected_small;
+        boostPerMinute.value += playerOrange.stats.boost.bpm;
+        boostPerMinute.gamesValue.push(playerOrange.stats.boost.bpm);
+        //TZB
+        timeZeroBoost.value += playerOrange.stats.boost.time_zero_boost;
+        timeZeroBoost.gamesValue.push(playerOrange.stats.boost.time_zero_boost);
+
+        timeMaxBoost.value += playerOrange.stats.boost.time_full_boost;
+        timeMaxBoost.gamesValue.push(playerOrange.stats.boost.time_full_boost);
+        //Stolen Big
+        stolenBig.value += playerOrange.stats.boost.count_stolen_big;
+        stolenBig.gamesValue.push(playerOrange.stats.boost.count_stolen_big);
+
+        stolenSmall.value += playerOrange.stats.boost.count_stolen_small;
+        stolenSmall.gamesValue.push(playerOrange.stats.boost.count_stolen_small);
+
+        takenBig.value += playerOrange.stats.boost.count_collected_big;
+        takenBig.gamesValue.push(playerOrange.stats.boost.count_collected_big);
+
+        takenSmall.value += playerOrange.stats.boost.count_collected_small;
+        takenSmall.gamesValue.push(playerOrange.stats.boost.count_collected_small);
       }
     });
     return {
-      bpm: fixedNumber(boostPerMinute),
-      timeZeroBoost: fixedNumber(timeZeroBoost),
-      timeMaxBoost: fixedNumber(timeMaxBoost),
-      stolenBig: fixedNumber(stolenBig),
-      stolenSmall: fixedNumber(stolenSmall),
-      takenSmall: fixedNumber(takenSmall),
-      takenBig: fixedNumber(takenBig),
+      bpm: { average: fixedNumber(boostPerMinute.value), gamesValue: boostPerMinute.gamesValue },
+      timeZeroBoost: { average: fixedNumber(timeZeroBoost.value), gamesValue: timeZeroBoost.gamesValue },
+      timeMaxBoost: { average: fixedNumber(timeMaxBoost.value), gamesValue: timeMaxBoost.gamesValue },
+      stolenBig: { average: fixedNumber(stolenBig.value), gamesValue: stolenBig.gamesValue },
+      stolenSmall: { average: fixedNumber(stolenSmall.value), gamesValue: stolenSmall.gamesValue },
+      takenSmall: { average: fixedNumber(takenSmall.value), gamesValue: takenSmall.gamesValue },
+      takenBig: { average: fixedNumber(takenBig.value), gamesValue: takenBig.gamesValue },
     };
   };
 
   const getOverfill = (games) => {
-    let overfill = 0;
-    let overfillStolen = 0;
+    let overfill = { value: 0, gamesValue: [] };
+    let overfillStolen = { value: 0, gamesValue: [] };
     games?.forEach((game) => {
       const playerBlue = game.blue.players.find(
         (player) => player.id.id === user.id
@@ -57,23 +85,29 @@ const useReplayData = ({ lastGames, comparedGames, user }) => {
       );
 
       if (playerBlue) {
-        overfill += playerBlue.stats.boost.amount_overfill;
-        overfillStolen += playerBlue.stats.boost.amount_overfill_stolen;
+        overfill.value += playerBlue.stats.boost.amount_overfill;
+        overfill.gamesValue.push(playerBlue.stats.boost.amount_overfill);
+
+        overfillStolen.value += playerBlue.stats.boost.amount_overfill_stolen;
+        overfillStolen.gamesValue.push(playerBlue.stats.boost.amount_overfill_stolen);
       } else {
-        overfill += playerOrange.stats.boost.amount_overfill;
-        overfillStolen += playerOrange.stats.boost.amount_overfill_stolen;
+        overfill.value += playerOrange.stats.boost.amount_overfill;
+        overfill.gamesValue.push(playerOrange.stats.boost.amount_overfill);
+
+        overfillStolen.value += playerOrange.stats.boost.amount_overfill_stolen;
+        overfillStolen.gamesValue.push(playerOrange.stats.boost.amount_overfill_stolen);
       }
     });
     return {
-      overfill: fixedNumber(overfill),
-      overfillStolen: fixedNumber(overfillStolen),
+      overfill: { average: fixedNumber(overfill.value), gamesValue: overfill.gamesValue },
+      overfillStolen: { average: fixedNumber(overfillStolen.value), gamesValue: overfillStolen.gamesValue },
     };
   };
 
   const getMovement = (games) => {
-    let timeSupersonicSpeed = 0;
-    let timeSlowSpeed = 0;
-    let timeBoostSpeed = 0;
+    let timeSupersonicSpeed = { value: 0, gamesValue: [] };
+    let timeSlowSpeed = { value: 0, gamesValue: [] };
+    let timeBoostSpeed = { value: 0, gamesValue: [] };
     games?.forEach((game) => {
       const playerBlue = game.blue.players.find(
         (player) => player.id.id === user.id
@@ -83,21 +117,26 @@ const useReplayData = ({ lastGames, comparedGames, user }) => {
       );
 
       if (playerBlue) {
-        timeSupersonicSpeed += playerBlue.stats.movement.time_supersonic_speed;
-        timeSlowSpeed += playerBlue.stats.movement.time_slow_speed;
-        timeBoostSpeed += playerBlue.stats.movement.time_boost_speed;
+        timeSupersonicSpeed.value += playerBlue.stats.movement.time_supersonic_speed;
+        timeSupersonicSpeed.gamesValue.push(playerBlue.stats.movement.time_supersonic_speed);
+        timeSlowSpeed.value += playerBlue.stats.movement.time_slow_speed;
+        timeSlowSpeed.gamesValue.push(playerBlue.stats.movement.time_slow_speed);
+        timeBoostSpeed.value += playerBlue.stats.movement.time_boost_speed;
+        timeBoostSpeed.gamesValue.push(playerBlue.stats.movement.time_boost_speed);
       } else {
-        timeSupersonicSpeed +=
-          playerOrange.stats.movement.time_supersonic_speed;
-        timeSlowSpeed += playerOrange.stats.movement.time_slow_speed;
-        timeBoostSpeed += playerOrange.stats.movement.time_boost_speed;
+        timeSupersonicSpeed.value += playerOrange.stats.movement.time_supersonic_speed;
+        timeSupersonicSpeed.gamesValue.push(playerOrange.stats.movement.time_supersonic_speed);
+        timeSlowSpeed.value += playerOrange.stats.movement.time_slow_speed;
+        timeSlowSpeed.gamesValue.push(playerOrange.stats.movement.time_slow_speed);
+        timeBoostSpeed.value += playerOrange.stats.movement.time_boost_speed;
+        timeBoostSpeed.gamesValue.push(playerOrange.stats.movement.time_boost_speed);
       }
     });
 
     return {
-      timeSupersonicSpeed: fixedNumber(timeSupersonicSpeed),
-      timeSlowSpeed: fixedNumber(timeSlowSpeed),
-      timeBoostSpeed: fixedNumber(timeBoostSpeed),
+      timeSupersonicSpeed: { average: fixedNumber(timeSupersonicSpeed.value), gamesValue: timeSupersonicSpeed.gamesValue },
+      timeSlowSpeed: { average: fixedNumber(timeSlowSpeed.value), gamesValue: timeSlowSpeed.gamesValue },
+      timeBoostSpeed: { average: fixedNumber(timeBoostSpeed.value), gamesValue: timeBoostSpeed.gamesValue },
     };
   };
 

@@ -10,6 +10,9 @@ module.exports = {
         brandSuccess: "#00cc8a",
         brandRed: "#f6005c",
       },
+      screens: {
+        minApp: '1250px'
+      }
     },
   },
   variants: {

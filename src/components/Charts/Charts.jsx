@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { init, getInstanceByDom } from "echarts";
 
-function ReactECharts({ option, style, settings, loading, title }) {
+function ReactECharts({ option, style, settings, loading, className }) {
     const chartRef = useRef(null);
 
     useEffect(() => {
@@ -43,8 +43,7 @@ function ReactECharts({ option, style, settings, loading, title }) {
 
     return (
         <>
-            <h3 className="text-white text-center w-full text-2xl">{title}</h3>
-            <div className="h-96" ref={chartRef} style={{ width: "100%", ...style }} />
+            <div className={`charts h-96 ${className}`} ref={chartRef} style={{ ...style }} />
         </>
     );
 }
