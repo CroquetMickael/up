@@ -5,10 +5,9 @@ import { useReplayData } from "../../hooks/useReplayData";
 import { BoostSection } from "./Section/BoostSection";
 import { MovementSection } from "./Section/MovementSection";
 import { useReplays } from "../../context/Replays/ReplaysContext";
+import { TabItem, Tabs } from "../../components/Tabs/Tabs";
 
 import "./Home.css";
-import { useHistory } from "react-router";
-import { TabItem, Tabs } from "../../components/Tabs/Tabs";
 
 function Home() {
   const { user } = useUser();
@@ -26,7 +25,12 @@ function Home() {
   return (
     <>
       <div className="z-10 relative fade-in">
-        <Tabs defaultIndex={1}>
+        <Tabs onTabClick={() => {
+          // don't remove fix a echarts bug with resize and tabs
+          setTimeout(() => {
+            window.dispatchEvent(new Event('resize'))
+          }, 0)
+        }} defaultIndex={1}>
           <TabItem label="Boost" index={1}>
             <BoostSection boost={boost} rankData={rankData} />
           </TabItem>
