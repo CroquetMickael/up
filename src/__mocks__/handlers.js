@@ -12,7 +12,13 @@ export const handlers = [
     return res(ctx.delay(), ctx.status(200), ctx.json(ping));
   }),
   rest.post(`${apiURL}/v2/upload`, (req, res, ctx) => {
-    return res(ctx.delay(), ctx.status(201), ctx.json(upload));
+    let id = "";
+    if (req.body.file.name === "upload1.txt") {
+      id = "51d7eecd-1fc1-401e-b19a-5719c1a5087c"
+    } else {
+      id = upload.id
+    };
+    return res(ctx.delay(), ctx.status(201), ctx.json({ ...upload, id }));
   }),
   rest.get(`${apiURL}/replays`, (req, res, ctx) => {
     return res(ctx.delay(), ctx.status(200), ctx.json(replays));
