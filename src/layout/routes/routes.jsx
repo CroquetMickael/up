@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import { UploadReplay } from "../../components/UploadReplay/UploadReplay";
 import { ReplayContextProvider } from "../../context/Replays/ReplaysContext";
 import { UserContextProvider } from "../../context/UserContext";
@@ -9,12 +9,10 @@ import { Layout } from "../Layout";
 
 const Routes = () => (
   <Layout>
-    <BrowserRouter>
+    <HashRouter>
       <UserContextProvider>
         <Switch>
-          <Route exact path="/activate">
-            <Activate />
-          </Route>
+          <Route exact path="/activate" component={Activate} />
           <ReplayContextProvider>
             <UploadReplay>
               <div class="bg-yellow-100 border-l-4 border-yellow-500 text-orange-700 p-4" role="alert">
@@ -28,14 +26,12 @@ const Routes = () => (
                   <li>- I will try my best to have more langage, currently only english :/</li>
                 </ul>
               </div>
-              <Route exact path="/">
-                <Home />
-              </Route>
+              <Route exact path="/" component={Home} />
             </UploadReplay>
           </ReplayContextProvider>
         </Switch>
       </UserContextProvider>
-    </BrowserRouter>
+    </HashRouter  >
   </Layout >
 );
 
