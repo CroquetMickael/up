@@ -12,6 +12,9 @@ module.exports = {
       },
       screens: {
         minApp: '1250px'
+      },
+      zIndex: {
+        '-1': '-1',
       }
     },
   },

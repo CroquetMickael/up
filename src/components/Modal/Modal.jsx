@@ -3,7 +3,7 @@ import React from "react";
 const Modal = ({ children, modalOpen, toggleModal }) => (
   <div
     className={`fixed transition-all duration-100 ${
-      modalOpen ? "opacity-100 z-40" : "opacity-0 z-0"
+      modalOpen ? "opacity-100 z-40" : "opacity-0 -z-1"
     } w-full h-full pin flex items-center`}
   >
     <div
