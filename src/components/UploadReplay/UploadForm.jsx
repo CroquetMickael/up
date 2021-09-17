@@ -4,11 +4,12 @@ import { useQueue } from "../../hooks/useQueue";
 import { useFetch } from "../../hooks/useFetch";
 import { Modal } from "../Modal/Modal";
 import { UploadList } from "./UploadList";
+import { useNotification } from "../../context/Notification/NotificationContext";
 
 
 const UploadForm = ({ modalOpen, toggleModal, file }) => {
   const [visibility, setVisibility] = useState("public");
-  const { post, isResolved, data, resetFetchState: resetPost } = useFetch();
+  const { post, isResolved, data, resetFetchState: resetPost, hasError, httpCode } = useFetch();
   const ThirtySeconds = 30000;
   let retries = useRef({ id: "", retryCount: 0 });
   const {
@@ -18,9 +19,9 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
     data: replayData,
     resetFetchState,
   } = useFetch();
-  const { lastGames, setLastGames, comparedGames, setComparedGames } =
-    useReplays();
+  const { lastGames, setLastGames, comparedGames, setComparedGames } = useReplays();
   const { enqueue, dequeue, peek, isEmpty, elements } = useQueue();
+  const { addNewAlert } = useNotification();
 
   let getTimeout = useRef(null);
 
@@ -65,6 +66,7 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
 
   useEffect(() => {
     if (isResolved) {
+      addNewAlert({ type: "success", message: `Upload complete : ${file.name}` });
       const id = data?.id;
       enqueue({ name: file.name, id });
       if (getTimeout.current === null) {
@@ -73,7 +75,18 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
       }
       resetPost();
     }
-  }, [data?.id, enqueue, file?.name, get, getWithTimeout, isResolved, loadingReplayData, resetPost]);
+
+    if (hasError) {
+      if (httpCode === 409) {
+        addNewAlert({ type: "error", message: `Replay already exist : ${file.name}`, title: "Upload in error" });
+      } else if (httpCode === 400) {
+        addNewAlert({ type: "error", message: `Please check if it's a replay file : ${file.name}`, title: "Upload in error" });
+      } else {
+        addNewAlert({ type: "error", message: `Something went wrong with ballchasing`, title: "Upload in error" });
+      }
+      resetPost();
+    }
+  }, [addNewAlert, data?.id, enqueue, file?.name, get, getWithTimeout, hasError, httpCode, isResolved, loadingReplayData, resetPost]);
 
   useEffect(() => {
     if (!isEmpty() || retrieveReplayData) {

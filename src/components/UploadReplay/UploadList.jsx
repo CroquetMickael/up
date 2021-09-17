@@ -3,7 +3,7 @@ import React from "react";
 
 const UploadList = ({ elements, retries }) => {
     return (
-        <div className="fixed z-30 top-10 right-0 mt-12 mr-6">
+        <div className="fixed z-30 top-32 right-0 mt-12 mr-6">
             <div className="w-full bg-brandDarker text-sm text-white font-bold px-5 py-2 shadow border-b border-gray-300">
                 Tracking replays
             </div>

@@ -3,6 +3,7 @@ import { useFetch } from "../../hooks/useFetch";
 import { useUser } from "../../context/UserContext";
 import { useDB } from "../../hooks/useDB";
 import { useHistory } from "react-router";
+import { useNotification } from "../../context/Notification/NotificationContext";
 
 const Activate = () => {
   const [apiKey, setApiKey] = useState("");
@@ -11,6 +12,7 @@ const Activate = () => {
     useFetch();
   const { DBSet, DBSave } = useDB();
   const { setUser } = useUser();
+  const { addNewAlert } = useNotification();
 
   useEffect(() => {
     if (isResolved) {
@@ -23,21 +25,13 @@ const Activate = () => {
       DBSave();
       setUser(userData);
       resetFetchState();
+      addNewAlert({ type: "success", message: "We retrieve your data", title: data.name });
     }
     if (hasError) {
-      console.log("error");
+      addNewAlert({ type: "error", message: "Your UPLOAD TOKEN is wrong", title: "Something went wrong" });
+      resetFetchState();
     }
-  }, [
-    DBSave,
-    DBSet,
-    apiKey,
-    data?.name,
-    data?.steam_id,
-    hasError,
-    isResolved,
-    resetFetchState,
-    setUser,
-  ]);
+  }, [DBSave, DBSet, addNewAlert, apiKey, data?.name, data?.steam_id, hasError, isResolved, resetFetchState, setUser]);
 
   const getUserInfo = () => {
     get("/");
@@ -103,25 +97,13 @@ const Activate = () => {
                         Check
                       </button>
                     </div>
-                    <p>
-                      {isSuccess && (
-                        <span className="text-green-400">
-                          Your data have been retrieve :)
-                        </span>
-                      )}
-                      {isSuccess && !isSuccess && (
-                        <span className="text-red-400">
-                          It seems you got the wrong API KEY
-                        </span>
-                      )}
-                    </p>
                   </div>
                 </div>
                 <div className="flex -mx-3">
                   <div className="w-full px-3 mb-5">
                     <button
                       disabled={!isSuccess}
-                      className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold disabled:"
+                      className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold disabled:bg-gray-500"
                     >
                       Continue
                     </button>
