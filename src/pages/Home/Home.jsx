@@ -5,7 +5,7 @@ import { useReplayData } from "../../hooks/useReplayData";
 import { BoostSection } from "./Section/BoostSection";
 import { MovementSection } from "./Section/MovementSection";
 import { useReplays } from "../../context/Replays/ReplaysContext";
-import { TabItem, Tabs } from "../../components/Tabs/Tabs";
+import { Tabs } from "../../components/Tabs/Tabs";
 
 import "./Home.css";
 
@@ -25,19 +25,16 @@ function Home() {
   return (
     <>
       <div className="z-10 relative fade-in">
-        <Tabs onTabClick={() => {
-          // don't remove fix a echarts bug with resize and tabs
-          setTimeout(() => {
-            window.dispatchEvent(new Event('resize'))
-          }, 0)
-        }} defaultIndex={1}>
-          <TabItem label="Boost" index={1}>
-            <BoostSection boost={boost} rankData={rankData} />
-          </TabItem>
-          <TabItem label="Movement" index={2}>
-            <MovementSection movement={movement} rankData={rankData} />
-          </TabItem>
-        </Tabs>
+        <div className="tab-view">
+          <Tabs
+            tabNames={["Boost", "Movement"]}
+            componentList={
+              [
+                <BoostSection boost={boost} rankData={rankData} />,
+                <MovementSection movement={movement} rankData={rankData} />
+              ]}
+          />
+        </div>
       </div>
     </>
   );
