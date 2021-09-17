@@ -17,7 +17,7 @@ const Activate = () => {
       const userData = {
         name: data?.name,
         id: data?.steam_id,
-        apiKey,
+        apiKey
       };
       DBSet("user", userData);
       DBSave();
@@ -91,6 +91,7 @@ const Activate = () => {
                         placeholder="Ball Chasing API KEY"
                         aria-label="Full name"
                         onChange={(e) => {
+                          setUser({ apiKey: e.target.value });
                           setApiKey(e.target.value);
                         }}
                       />
