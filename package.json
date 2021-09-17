@@ -1,13 +1,14 @@
 {
   "name": "up",
   "description": "your description",
-  "author": "your name",
+  "author": "Haze",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "electron-devtools-installer": "^3.2.0",
     "bottleneck": "^2.19.5",
     "echarts": "^5.2.0",
     "react": "^17.0.2",
@@ -18,12 +19,37 @@
     "stormdb": "^0.5.2",
     "web-vitals": "^1.0.1"
   },
-  "main": "public/electron.js",
+  "build": {
+    "productName": "up",
+    "appId": "com.up.app",
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "win": {
+      "icon": "public/app.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "**/*",
+      "build/**/*",
+      "assets/**/*",
+      "!dist/**/*",
+      "!src/**/*",
+
+
+      
+      "node_modules/**/*"
+    ]
+  },
   "homepage": "./",
   "scripts": {
     "start": "vite",
     "dev": "nf start",
-    "build": "vite build",
+    "build": "vite build --base=./",
     "test": "react-scripts test",
     "electron": "electron .",
     "dist": "npm run build && electron-builder"
@@ -52,7 +78,6 @@
     "cross-env": "^7.0.3",
     "electron": "^12.0.2",
     "electron-builder": "^22.10.5",
-    "electron-devtools-installer": "^3.2.0",
     "foreman": "^3.0.1",
     "msw": "^0.35.0",
     "postcss": "^7.0.36",

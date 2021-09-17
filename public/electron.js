@@ -1,24 +1,18 @@
-const {
-  default: installExtension,
-  REACT_DEVELOPER_TOOLS,
-} = require("electron-devtools-installer");
-
 const electron = require("electron");
 const { ipcMain, Menu, Tray, Notification } = require("electron");
 // Module to control application life.
 const app = electron.app;
-
-app.whenReady().then(() => {
-  installExtension(REACT_DEVELOPER_TOOLS)
-    .then((name) => console.log(`Added Extension:  ${name}`))
-    .catch((err) => console.log("An error occurred: ", err));
-});
 
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
 
 const path = require("path");
 const url = require("url");
+
+const {
+  default: installExtension,
+  REACT_DEVELOPER_TOOLS,
+} = require("electron-devtools-installer");
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -35,7 +29,7 @@ function createWindow() {
     height: 600,
     frame: false,
     title: "Up",
-    icon: __dirname + "./logo192.png",
+    icon: __dirname + "/logo192.png",
     webPreferences: {
       webSecurity: false,
       preload: __dirname + "/preload.js",
@@ -47,13 +41,15 @@ function createWindow() {
   const startUrl =
     process.env.ELECTRON_START_URL ||
     url.format({
-      pathname: path.join(__dirname, "../build/index.html"),
+      pathname: path.join(__dirname, "/index.html"),
       protocol: "file:",
       slashes: true,
     });
   mainWindow.loadURL(startUrl);
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  if (!app.isPackaged && process.env.ELECTRON_START_URL) {
+    mainWindow.webContents.openDevTools();
+  }
 
   // Emitted when the window is closed.
   mainWindow.on("closed", function () {
@@ -94,7 +90,14 @@ function createWindow() {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on("ready", () => {
-  tray = new Tray(__dirname + './logo192.png')
+
+  if (!app.isPackaged && process.env.ELECTRON_START_URL) {
+    installExtension(REACT_DEVELOPER_TOOLS)
+      .then((name) => console.log(`Added Extension:  ${name}`))
+      .catch((err) => console.log("An error occurred: ", err));
+  }
+
+  tray = new Tray(__dirname + '/logo192.png')
   const contextMenu = Menu.buildFromTemplate([
     {
       label: 'Show App', click: function () {
