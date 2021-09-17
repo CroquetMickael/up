@@ -4,13 +4,15 @@
   "author": "Haze",
   "version": "0.1.0",
   "private": true,
+  "main": "./public/electron.js",
   "dependencies": {
+    "@lukeed/uuid": "^2.0.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "electron-devtools-installer": "^3.2.0",
     "bottleneck": "^2.19.5",
     "echarts": "^5.2.0",
+    "electron-devtools-installer": "^3.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
@@ -39,9 +41,6 @@
       "assets/**/*",
       "!dist/**/*",
       "!src/**/*",
-
-
-      
       "node_modules/**/*"
     ]
   },
