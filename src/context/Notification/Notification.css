@@ -3,11 +3,26 @@
   animation: toast-in-right 0.3s;
 }
 
+.unShowed {
+  transform: translateX(120%);
+  transition: transform 0.3s ease-in-out;
+  animation: toast-in-exist 0.3s
+}
+
 @keyframes toast-in-right {
   from {
     transform: translateX(100%);
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes toast-in-exist {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(120%);
   }
 }
