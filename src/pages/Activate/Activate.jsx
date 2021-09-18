@@ -38,8 +38,8 @@ const Activate = () => {
   };
 
   return (
-    <form className="w-full" onSubmit={() => push("/")}>
-      <div className="min-w-screen min-h-screen bg-gray-900 flex items-center justify-center px-5 py-5">
+    <form className="w-full h-full" onSubmit={() => push("/")}>
+      <div className="h-full bg-gray-900 flex items-center justify-center px-5 py-5">
         <div className="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden">
           <div className="md:flex w-full">
             <div className="hidden md:block w-1/2 bg-indigo-500 py-10 px-10">

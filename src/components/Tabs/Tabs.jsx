@@ -10,6 +10,7 @@ const Tabs = ({ tabNames, componentList }) => {
             <div className="tab-menu sticky top-0 bg-brand z-10">
                 {tabNames.map((name, index) =>
                     <button
+                        key={name}
                         onClick={() => setActiveTab(index)}
                         className={activeTab === index ? 'focus' : ''}
                     >

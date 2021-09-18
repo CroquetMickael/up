@@ -30,8 +30,8 @@ function Home() {
             tabNames={["Boost", "Movement"]}
             componentList={
               [
-                <BoostSection boost={boost} rankData={rankData} />,
-                <MovementSection movement={movement} rankData={rankData} />
+                <BoostSection boost={boost} rankData={rankData} key="Boost Component"/>,
+                <MovementSection movement={movement} rankData={rankData} key="Movement Component"/>
               ]}
           />
         </div>

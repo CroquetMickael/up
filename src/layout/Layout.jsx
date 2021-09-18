@@ -1,11 +1,13 @@
 import React from "react";
-import { TitleBarComponent } from "./titlebar/Titlebar";
+import { Sidebar } from "./Sidebar/Sidebar";
 
 const Layout = ({ children }) => (
-  <div className="flex flex-col h-screen overflow-x-hidden">
-    <TitleBarComponent />
-    <main className="h-full bg-brand  overflow-y-auto overflow-x-hidden">{children}</main>
-  </div>
+  <main className="h-full overflow-y-auto overflow-x-hidden">
+    <Sidebar />
+    <div className="flex flex-col ml-14">
+      {children}
+    </div>
+  </main>
 );
 
 export { Layout };
