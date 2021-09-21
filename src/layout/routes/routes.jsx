@@ -6,6 +6,7 @@ import { ReplayContextProvider } from "../../context/Replays/ReplaysContext";
 import { UserContextProvider } from "../../context/UserContext";
 import { Activate } from "../../pages/Activate/Activate";
 import { Home } from "../../pages/Home/Home";
+import { ReplayDetail } from "../../pages/Replays/Detail/ReplayDetail";
 import { Replays } from "../../pages/Replays/Replays";
 import { Layout } from "../Layout";
 
@@ -30,6 +31,7 @@ const Routes = () => (
                 </div>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/replays" component={Replays} />
+                <Route exact path="/replays/:replayId" component={ReplayDetail} />
               </UploadReplay>
             </Layout>
           </ReplayContextProvider>

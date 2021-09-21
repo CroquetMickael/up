@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      inset: {
+        "10.5": "2.7rem"
+      },
       colors: {
         brand: "#1e1e3b",
         brandDarker: "#141429",
