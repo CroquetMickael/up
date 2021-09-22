@@ -1,5 +1,10 @@
 const electron = require("electron");
 const { ipcMain, Menu, Tray, Notification } = require("electron");
+const chokidar = require("chokidar");
+const fs = require("fs");
+
+let watcher = null;
+
 // Module to control application life.
 const app = electron.app;
 
@@ -76,50 +81,83 @@ function createWindow() {
       new Notification({
         title: "Up",
         body: "Up is hidden, close it from tray icons",
-
       }).show();
       notificationSent = true;
     }
     mainWindow.hide();
   });
 
-}
+  ipcMain.on("autoUpload", function (event, arg) {
+    watcher = chokidar.watch(arg, {
+      ignored: /[\/\\]\./,
+      persistent: true,
+      awaitWriteFinish: true,
+    });
 
+    function onWatcherReady() {
+      watcher.on("add", function (filePath) {
+        try {
+          const data = fs.readFileSync(filePath);
+          const fileName = path.basename(filePath);
+          if (fileName.includes(".replay")) {
+            event.reply("fileFound", {
+              fileName,
+              file: data,
+            });
+          }
+        } catch (err) {
+          console.error(err);
+        }
+      });
+    }
+
+    // Declare the listeners of the watcher
+    watcher.on("ready", onWatcherReady).on("error", function (error) {
+      console.log("Error happened", error);
+    });
+  });
+
+  ipcMain.on("stopAutoUpload", async function () {
+    if (watcher) {
+      await watcher.close();
+    }
+  });
+}
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on("ready", () => {
-
   if (!app.isPackaged && process.env.ELECTRON_START_URL) {
     installExtension(REACT_DEVELOPER_TOOLS)
       .then((name) => console.log(`Added Extension:  ${name}`))
       .catch((err) => console.log("An error occurred: ", err));
   }
 
-  tray = new Tray(__dirname + '/logo192.png')
+  tray = new Tray(__dirname + "/logo192.png");
   const contextMenu = Menu.buildFromTemplate([
     {
-      label: 'Show App', click: function () {
+      label: "Show App",
+      click: function () {
         mainWindow.show();
-      }
+      },
     },
     {
-      label: 'Quit', click: function () {
+      label: "Quit",
+      click: function () {
         app.isQuiting = true;
         mainWindow.destroy();
         app.quit();
-      }
-    }
-  ])
-  tray.setToolTip('Up')
+      },
+    },
+  ]);
+  tray.setToolTip("Up");
   tray.setContextMenu(contextMenu);
-  tray.on('click', () => {
+  tray.on("click", () => {
     mainWindow.show();
   });
-  createWindow()
-})
-
+  createWindow();
+});
 
 // Quit when all windows are closed.
 app.on("window-all-closed", function () {
