@@ -6,10 +6,22 @@ import { Modal } from "../Modal/Modal";
 import { UploadList } from "./UploadList";
 import { useNotification } from "../../context/Notification/NotificationContext";
 
-
-const UploadForm = ({ modalOpen, toggleModal, file }) => {
+const UploadForm = ({
+  modalOpen,
+  toggleModal,
+  file,
+  setIsFromAutoUpload,
+  isFromAutoUpload,
+}) => {
   const [visibility, setVisibility] = useState("public");
-  const { post, isResolved, data, resetFetchState: resetPost, hasError, httpCode } = useFetch();
+  const {
+    post,
+    isResolved: uploadResolved,
+    data,
+    resetFetchState: resetPost,
+    hasError: uploadError,
+    httpCode,
+  } = useFetch();
   const ThirtySeconds = 30000;
   let retries = useRef({ id: "", retryCount: 0 });
   const {
@@ -19,7 +31,8 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
     data: replayData,
     resetFetchState,
   } = useFetch();
-  const { lastGames, setLastGames, comparedGames, setComparedGames } = useReplays();
+  const { lastGames, setLastGames, comparedGames, setComparedGames } =
+    useReplays();
   const { enqueue, dequeue, peek, isEmpty, elements } = useQueue();
   const { addNewAlert } = useNotification();
 
@@ -31,7 +44,7 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
     getTimeout.current = setTimeout(() => {
       get(`/replays/${id}`);
       retries.current.retryCount += 1;
-    }, ThirtySeconds)
+    }, ThirtySeconds);
   };
 
   const updateReplaysData = useCallback(() => {
@@ -50,23 +63,43 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
       const { id: newReplayId } = peek() || "";
       retries.current.retryCount = 0;
       retries.current.id = newReplayId;
-      getWithTimeout(newReplayId)
+      getWithTimeout(newReplayId);
     } else {
       resetFetchState();
     }
-  }, [comparedGames, dequeue, elements.length, getWithTimeout, lastGames, peek, replayData, resetFetchState, setComparedGames, setLastGames])
+  }, [
+    comparedGames,
+    dequeue,
+    elements.length,
+    getWithTimeout,
+    lastGames,
+    peek,
+    replayData,
+    resetFetchState,
+    setComparedGames,
+    setLastGames,
+  ]);
 
-  const sendFile = () => {
+  const sendFile = useCallback(() => {
     const formData = new FormData();
     formData.append("file", file);
     post(`/v2/upload?visibility=${visibility}`, {
       body: formData,
     });
-  };
+  }, [file, post, visibility]);
 
   useEffect(() => {
-    if (isResolved) {
-      addNewAlert({ type: "success", message: `Upload complete : ${file.name}` });
+    if (isFromAutoUpload) {
+      sendFile();
+    }
+  }, [file, isFromAutoUpload, sendFile]);
+
+  useEffect(() => {
+    if (uploadResolved) {
+      addNewAlert({
+        type: "success",
+        message: `Upload complete : ${file.name}`,
+      });
       const id = data?.id;
       enqueue({ name: file.name, id });
       if (getTimeout.current === null) {
@@ -76,17 +109,41 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
       resetPost();
     }
 
-    if (hasError) {
+    if (uploadError) {
       if (httpCode === 409) {
-        addNewAlert({ type: "error", message: `Replay already exist : ${file.name}`, title: "Upload in error" });
+        addNewAlert({
+          type: "error",
+          message: `Replay already exist : ${file.name}`,
+          title: "Upload in error",
+        });
       } else if (httpCode === 400) {
-        addNewAlert({ type: "error", message: `Please check if it's a replay file : ${file.name}`, title: "Upload in error" });
+        addNewAlert({
+          type: "error",
+          message: `Please check if it's a replay file : ${file.name}`,
+          title: "Upload in error",
+        });
       } else {
-        addNewAlert({ type: "error", message: `Something went wrong with ballchasing`, title: "Upload in error" });
+        addNewAlert({
+          type: "error",
+          message: `Something went wrong with ballchasing`,
+          title: "Upload in error",
+        });
       }
       resetPost();
     }
-  }, [addNewAlert, data?.id, enqueue, file?.name, get, getWithTimeout, hasError, httpCode, isResolved, loadingReplayData, resetPost]);
+  }, [
+    addNewAlert,
+    data?.id,
+    enqueue,
+    file?.name,
+    get,
+    getWithTimeout,
+    uploadError,
+    httpCode,
+    uploadResolved,
+    loadingReplayData,
+    resetPost,
+  ]);
 
   useEffect(() => {
     if (!isEmpty() || retrieveReplayData) {
@@ -112,7 +169,19 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
         getWithTimeout(failedReplay.id);
       }
     }
-  }, [dequeue, elements.length, enqueue, get, getWithTimeout, isEmpty, peek, replayData?.status, resetFetchState, retrieveReplayData, updateReplaysData])
+  }, [
+    dequeue,
+    elements.length,
+    enqueue,
+    get,
+    getWithTimeout,
+    isEmpty,
+    peek,
+    replayData?.status,
+    resetFetchState,
+    retrieveReplayData,
+    updateReplaysData,
+  ]);
 
   return (
     <>
@@ -144,9 +213,9 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
               onChange={(e) => setVisibility(e.target.value)}
             />
             <span className="ml-2 text-gray-700">
-              <b>Unlisted</b>: only you and the people with the link to the replay
-              can view it. Doesn't appear in the replays list page (except for
-              you)
+              <b>Unlisted</b>: only you and the people with the link to the
+              replay can view it. Doesn't appear in the replays list page
+              (except for you)
             </span>
           </label>
           <label className="inline-flex items-center mt-3">
@@ -158,8 +227,8 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
               onChange={(e) => setVisibility(e.target.value)}
             />
             <span className="ml-2 text-gray-700">
-              <b>Private</b>: only you can view the replay. Doesn't appear in the
-              replays list page or anywhere else (except for you)
+              <b>Private</b>: only you can view the replay. Doesn't appear in
+              the replays list page or anywhere else (except for you)
             </span>
           </label>
         </div>
@@ -173,6 +242,7 @@ const UploadForm = ({ modalOpen, toggleModal, file }) => {
           <button
             className="px-4 py-2 text-white font-semibold bg-blue-500 rounded"
             onClick={() => {
+              setIsFromAutoUpload(false);
               sendFile();
               toggleModal();
             }}

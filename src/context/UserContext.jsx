@@ -6,7 +6,7 @@ const UserContext = createContext();
 
 const UserContextProvider = ({ children }) => {
   const { push } = useHistory();
-  const { DBGet } = useDB();
+  const { DBGet, DBSet, DBSave } = useDB();
   const [user, setUser] = useState(DBGet("user").value());
   const [isFirstLoading, setIsFirstLoading] = useState(true);
 
@@ -15,6 +15,19 @@ const UserContextProvider = ({ children }) => {
       push("/activate");
     }
   }, [push, user]);
+
+  useEffect(() => {
+    DBSet("user", user);
+    DBSave();
+  }, [DBSave, DBSet, user]);
+
+  useEffect(() => {
+    if (user.path !== "" && user.autoUpload) {
+      window.electron.ipcRenderer.send("autoUpload", user.path);
+    } else {
+      window.electron.ipcRenderer.send("stopAutoUpload");
+    }
+  }, [user?.autoUpload, user?.path]);
 
   return (
     <UserContext.Provider

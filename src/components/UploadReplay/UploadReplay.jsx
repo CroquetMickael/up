@@ -1,3 +1,4 @@
+import { use } from "echarts";
 import React, { useRef, useState, useEffect } from "react";
 import { UploadForm } from "./UploadForm";
 import { UploadModal } from "./UploadModal";
@@ -6,6 +7,7 @@ const UploadReplay = ({ children }) => {
   const [showModalUpload, setShowModalUpload] = useState(false);
   const [showFormModal, setShowFormModal] = useState(false);
   const [file, setFile] = useState();
+  const [isFromAutoUpload, setIsFromAutoUpload] = useState(false);
 
   var lastTarget = useRef(null);
 
@@ -47,6 +49,15 @@ const UploadReplay = ({ children }) => {
         setShowModalUpload(false);
       }
     });
+
+    window.electron.on("fileFound", (event, arg) => {
+      const { file, fileName } = arg;
+      const fileToPost = new File(file, fileName);
+      if (file.name !== fileName) {
+        setFile(fileToPost);
+        setIsFromAutoUpload(true);
+      }
+    });
   }, []);
 
   return (
@@ -56,6 +67,8 @@ const UploadReplay = ({ children }) => {
         modalOpen={showFormModal}
         toggleModal={() => setShowFormModal(false)}
         file={file}
+        isFromAutoUpload={isFromAutoUpload}
+        setIsFromAutoUpload={setIsFromAutoUpload}
       />
       {children}
     </>
