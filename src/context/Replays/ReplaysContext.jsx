@@ -89,7 +89,10 @@ const ReplayContextProvider = ({ children }) => {
     <ReplayContext.Provider
       value={{ lastGames, setLastGames, comparedGames, setComparedGames }}
     >
-      <Loadable progress={{ value: limiter.counts().DONE, max: 20 }} isDone={limiter.counts().DONE >=20}>
+      <Loadable
+        progress={{ value: limiter.counts().DONE, max: 20 }}
+        isDone={limiter.counts().DONE >= 20}
+      >
         {children}
       </Loadable>
     </ReplayContext.Provider>
