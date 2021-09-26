@@ -22,12 +22,16 @@ const UserContextProvider = ({ children }) => {
   }, [DBSave, DBSet, user]);
 
   useEffect(() => {
-    if (user.path !== "" && user.autoUpload) {
+    if (user?.path !== "" && user?.autoUpload) {
       window.electron.ipcRenderer.send("autoUpload", user.path);
     } else {
       window.electron.ipcRenderer.send("stopAutoUpload");
     }
   }, [user?.autoUpload, user?.path]);
+
+  useEffect(() => {
+    window.electron.ipcRenderer.send("autoLaunch", user?.autoLaunch);
+  }, [user?.autoLaunch]);
 
   return (
     <UserContext.Provider
