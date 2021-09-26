@@ -13,6 +13,10 @@ const BrowserWindow = electron.BrowserWindow;
 
 const path = require("path");
 const url = require("url");
+var AutoLaunch = require("auto-launch");
+var autoLauncher = new AutoLaunch({
+  name: "up",
+});
 
 const {
   default: installExtension,
@@ -115,6 +119,14 @@ function createWindow() {
     watcher.on("ready", onWatcherReady).on("error", function (error) {
       console.log("Error happened", error);
     });
+  });
+
+  ipcMain.on("autoLaunch", async function (event, arg) {
+    if (arg) {
+      await autoLauncher.enable();
+    } else {
+      await autoLauncher.disable();
+    }
   });
 
   ipcMain.on("stopAutoUpload", async function () {

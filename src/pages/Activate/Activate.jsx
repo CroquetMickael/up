@@ -19,6 +19,9 @@ const Activate = () => {
       const userData = {
         name: data?.name,
         id: data?.steam_id,
+        autoUpload: false,
+        autoLaunch: false,
+        path: "",
         apiKey
       };
       DBSet("user", userData);
