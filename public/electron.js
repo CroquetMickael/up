@@ -95,7 +95,11 @@ function createWindow() {
     watcher = chokidar.watch(arg, {
       ignored: /[\/\\]\./,
       persistent: true,
-      awaitWriteFinish: true,
+      awaitWriteFinish: {
+        pollInterval: 100,
+        stabilityThreshold: 5000
+      },
+
     });
 
     function onWatcherReady() {
@@ -106,7 +110,7 @@ function createWindow() {
           if (fileName.includes(".replay")) {
             event.reply("fileFound", {
               fileName,
-              file: data,
+              file: data.buffer,
             });
           }
         } catch (err) {
