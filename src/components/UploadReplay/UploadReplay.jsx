@@ -1,4 +1,3 @@
-import { use } from "echarts";
 import React, { useRef, useState, useEffect } from "react";
 import { UploadForm } from "./UploadForm";
 import { UploadModal } from "./UploadModal";
@@ -6,7 +5,7 @@ import { UploadModal } from "./UploadModal";
 const UploadReplay = ({ children }) => {
   const [showModalUpload, setShowModalUpload] = useState(false);
   const [showFormModal, setShowFormModal] = useState(false);
-  const [file, setFile] = useState();
+  const [currentFile, setCurrentFile] = useState();
   const [isFromAutoUpload, setIsFromAutoUpload] = useState(false);
 
   var lastTarget = useRef(null);
@@ -43,8 +42,9 @@ const UploadReplay = ({ children }) => {
 
     window.addEventListener("drop", function (e) {
       e.preventDefault();
+      setIsFromAutoUpload(false);
       if (e.dataTransfer.files.length === 1) {
-        setFile(e.dataTransfer.files[0]);
+        setCurrentFile(e.dataTransfer.files[0]);
         setShowFormModal(true);
         setShowModalUpload(false);
       }
@@ -52,13 +52,13 @@ const UploadReplay = ({ children }) => {
 
     window.electron.on("fileFound", (event, arg) => {
       const { file, fileName } = arg;
-      const fileToPost = new File(file, fileName);
-      if (file.name !== fileName) {
-        setFile(fileToPost);
+      const fileToPost = new File([new Blob([new Uint8Array(file)])], fileName);
+      if (currentFile?.name !== fileName) {
+        setCurrentFile(fileToPost);
         setIsFromAutoUpload(true);
       }
     });
-  }, []);
+  }, [currentFile?.name]);
 
   return (
     <>
@@ -66,7 +66,7 @@ const UploadReplay = ({ children }) => {
       <UploadForm
         modalOpen={showFormModal}
         toggleModal={() => setShowFormModal(false)}
-        file={file}
+        file={currentFile}
         isFromAutoUpload={isFromAutoUpload}
         setIsFromAutoUpload={setIsFromAutoUpload}
       />
