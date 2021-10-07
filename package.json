@@ -2,9 +2,13 @@
   "name": "up",
   "description": "your description",
   "author": "Haze",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "main": "./public/electron.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/CroquetMickael/up.git"
+  },
   "dependencies": {
     "@lukeed/uuid": "^2.0.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -15,6 +19,7 @@
     "chokidar": "^3.5.2",
     "echarts": "^5.2.0",
     "electron-devtools-installer": "^3.2.0",
+    "electron-updater": "^4.3.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
@@ -35,7 +40,8 @@
     },
     "nsis": {
       "oneClick": false,
-      "allowToChangeInstallationDirectory": true
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true
     },
     "files": [
       "**/*",
@@ -53,7 +59,8 @@
     "build": "vite build --base=./",
     "test": "react-scripts test",
     "electron": "electron .",
-    "dist": "npm run build && electron-builder"
+    "dist": "npm run build && electron-builder",
+    "publish": "electron-builder --publish always "
   },
   "eslintConfig": {
     "extends": [

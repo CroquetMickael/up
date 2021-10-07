@@ -11,7 +11,9 @@
 # production
 /build
 /dist
+/wwwroot
 .env
+electron-builder.yml
 
 # misc
 .DS_Store
