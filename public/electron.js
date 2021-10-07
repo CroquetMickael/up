@@ -10,10 +10,10 @@ const app = electron.app;
 
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
-
 const path = require("path");
 const url = require("url");
 var AutoLaunch = require("auto-launch");
+const { autoUpdater } = require("electron-updater");
 var autoLauncher = new AutoLaunch({
   name: "up",
 });
@@ -29,6 +29,8 @@ let mainWindow;
 let tray;
 let notificationSent = false;
 
+let splash;
+
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
@@ -38,10 +40,12 @@ function createWindow() {
     height: 600,
     frame: false,
     title: "Up",
+    show: false,
     icon: __dirname + "/logo192.png",
     webPreferences: {
       webSecurity: false,
       preload: __dirname + "/preload.js",
+      devTools: app.isPackaged ? false : true,
     },
   });
 
@@ -54,11 +58,18 @@ function createWindow() {
       protocol: "file:",
       slashes: true,
     });
+
   mainWindow.loadURL(startUrl);
   // Open the DevTools.
   if (!app.isPackaged && process.env.ELECTRON_START_URL) {
     mainWindow.webContents.openDevTools();
   }
+
+  // if main window is ready to show, then destroy the splash window and show up the main window
+  mainWindow.once("ready-to-show", () => {
+    splash.destroy();
+    mainWindow.show();
+  });
 
   // Emitted when the window is closed.
   mainWindow.on("closed", function () {
@@ -97,9 +108,8 @@ function createWindow() {
       persistent: true,
       awaitWriteFinish: {
         pollInterval: 100,
-        stabilityThreshold: 5000
+        stabilityThreshold: 5000,
       },
-
     });
 
     function onWatcherReady() {
@@ -139,6 +149,74 @@ function createWindow() {
     }
   });
 }
+const createSplashScreen = () => {
+  /// create a browser window
+  splash = new BrowserWindow({
+    /// define width and height for the window
+    width: 500,
+    height: 500,
+    /// remove the window frame, so it will become a frameless window
+    frame: false,
+    /// and set the transparency, to remove any window background color
+    alwaysOnTop: true,
+    transparent: false,
+    resizable: false,
+    webPreferences: {
+      devTools: false,
+      preload: __dirname + "/preload.js",
+    },
+  });
+
+  function sendStatusToWindow(object) {
+    splash.webContents.send("message", object);
+  }
+
+  splash.loadURL("file://" + __dirname + "/splash/splash.html");
+  splash.on("closed", () => (splash = null));
+  splash.webContents.on("did-finish-load", () => {
+    splash.show();
+    autoUpdater.checkForUpdates();
+
+    autoUpdater.on("checking-for-update", () => {
+      sendStatusToWindow({
+        type: "checking",
+      });
+    });
+    autoUpdater.on("update-available", (info) => {
+      sendStatusToWindow({
+        type: "update",
+      });
+    });
+    autoUpdater.on("update-not-available", (info) => {
+      setTimeout(function () {
+        createWindow();
+      }, 3000);
+    });
+    autoUpdater.on("error", (err) => {
+      sendStatusToWindow({
+        type: "error",
+        information: err,
+      });
+      setTimeout(function () {
+        createWindow();
+      }, 3000);
+    });
+    autoUpdater.on("download-progress", (progressObj) => {
+      sendStatusToWindow({
+        type: "progress",
+        information: progressObj.percent,
+      });
+    });
+    autoUpdater.on("update-downloaded", (info) => {
+      sendStatusToWindow({
+        type: "downloaded",
+      });
+      setTimeout(function () {
+        autoUpdater.quitAndInstall();
+      }, 3000);
+    });
+  });
+};
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -172,7 +250,7 @@ app.on("ready", () => {
   tray.on("click", () => {
     mainWindow.show();
   });
-  createWindow();
+  createSplashScreen();
 });
 
 // Quit when all windows are closed.

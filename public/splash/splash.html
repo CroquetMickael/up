@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Up</title>
+    <style>
+      .LoaderWrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+
+        box-sizing: border-box;
+        background-color: #141429;
+      }
+
+      .LoaderContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .LoaderTitle {
+        position: absolute;
+        top: 100px;
+      }
+
+      .progress {
+        background-color: #2428e2;
+        border-radius: 0.25rem;
+        height: 0.5rem;
+        text-align: center;
+        transition: width 0.2s ease-out;
+        width: 0%;
+      }
+
+      .progressBackground {
+        background-color: rgba(243, 244, 246, 1);
+        border-radius: 0.25rem;
+        height: 0.5rem;
+        width: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="LoaderWrapper">
+      <div class="LoaderContent">
+        <h1 class="LoaderTitle">Up</h4>
+        <img src="assets/8b17d7cd03d1f24ea6689b1aea1b3ddb.gif" height="350" width="400"/>
+        <p id="progress">Loading...</p>
+        <div style="width: 100%;">
+          <div
+              class="progressBackground"
+              role="progressbar"
+              id="progressBackground"
+          >
+              <div class="progress"/>
+          </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.electron.on('message', (evt, object) => {
+      console.log(object)
+     switch(object.type) {
+       case 'checking':
+          document.getElementById('progress').innerHTML = 'Checking for updates...';
+          break;
+       case 'not-available':
+          document.getElementById('progress').innerHTML = 'Launching';
+         break;
+       case 'error':
+          document.getElementById('progress').innerHTML = 'Error while trying to retrieve update, application will start'; 
+         break;
+        case 'update':
+          document.getElementById('progress').innerHTML = 'Update found.';
+          document.getElementById('progressBackground').style.width = '100%';
+         break;
+        case 'progress':
+          document.getElementById('progress').innerHTML = 'Downloading update...';
+          document.getElementsByClassName('progress')[0].style.width = `${object.information}%`;
+          break;
+        case 'downloaded':
+          document.getElementById('progress').innerHTML = 'Update downloaded. Will proceed installation.';
+          document.getElementById('progressBackground').style.width = '0%';
+          break;
+       default:
+         break;
+     }
+});
+  </script>
+</html>
