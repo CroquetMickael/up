@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Up
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Your daily rocket league tracker.
 
-## Available Scripts
+This application is build on the API of [BallChasing](https://ballchasing.com), every data provide by the application come from this API.
 
-In the project directory, you can run:
+### Privacy
 
-### `yarn start`
+About privacy, this application don't share any data outside of your computer, everythings is kept on your computer 😊.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Dashboard datas based on your 20 last game and your progression.
 
-### `yarn test`
+- See your stats from your 20 last games
+- Showing the progression 10 games vs 10 last games.
+- Color based on ranks data (Black is not found).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+![Dashboard](https://i.gyazo.com/259616e45f68b926f210b631810bed8e.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Charts of your progression
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Charts showing your average compared by ranks.
+- Charts showing your 10 last game based on your average (Green ok / Red : not ok)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Charts](https://i.gyazo.com/fbaa9e947408067bc67f6c7a25846398.png)
 
-### `yarn eject`
+### Games replay data
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- List of your 20 last games.
+- Charts based on team data.
+- Charts based on players data.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Games](https://i.gyazo.com/7ccc9a8f789e579d66d2132c1616f893.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Teams](https://i.gyazo.com/90a3b18139983e39cd7c182cf8c96c1a.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Players](https://i.gyazo.com/322a388446f6696e2a9af71c856b02c6.png)
 
-## Learn More
+### Upload
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Manual upload with drag and drop.
+- Choose your privacy upload for ballChasing (Only manual for now).
+- Automatic upload.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![ManualUploadDrag](https://i.imgur.com/uuQyHhW.png)
 
-### Code Splitting
+![ManualUploadDrop](https://i.imgur.com/k7ugshJ.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+#### Automatic Upload
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Automatic upload is desactivate at start, you need to activate it in your settings, provide the path to your rocket league replay folder `C:\Users\NAME\Documents\My Games\Rocket League\TAGame\Demos`.
 
-### Making a Progressive Web App
+Then activate the feature with the toggle button, the application will now provide automatic uploads.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## /!\ Upload disclaimer
 
-### Advanced Configuration
+Upload got a queue system, many times ballChasing didn't finish to provide datas, so the application will retry 10 times for a specific replay splitted by 30 seconds each call.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+  
+## Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+See [Contributing](https://github.com/CroquetMickael/up/blob/master/CONTRIBUTING.md)
 
-### `yarn build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[GNU General Public License v3.0](https://github.com/CroquetMickael/up/blob/master/LICENSE.md)
+
+## Changelog
+
+[Changelog](https://github.com/CroquetMickael/up/blob/master/CHANGELOG.md)
+  
+## Authors
+
+- [@CroquetMickael](https://github.com/CroquetMickael)
+
+  
