@@ -59,8 +59,8 @@
     "build": "vite build --base=./",
     "test": "react-scripts test",
     "electron": "electron .",
-    "dist": "npm run build && electron-builder",
-    "publish": "electron-builder --publish always "
+    "dist": "npm run build && electron-builder --publish never",
+    "publish": "electron-builder --publish"
   },
   "eslintConfig": {
     "extends": [
