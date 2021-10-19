@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 jobs:
   publish_on_win:
     runs-on: windows-latest
@@ -11,6 +11,9 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 14
+      - name: Extract version
+        id: extract_version
+        uses: Saionaro/extract-package-version@v1.0.6
       - name: install dependencies
         run: npm install
       - name: build
@@ -18,4 +21,6 @@ jobs:
       - name: publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VITE_APP_VERSION: ${{ steps.extract_version.outputs.version }}
+
         run: npm run publish -- onTag

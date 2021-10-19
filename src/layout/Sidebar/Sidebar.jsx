@@ -52,7 +52,7 @@ const Sidebar = () => {
               <MdSettings />
             </span>
             <span className="ml-2 text-sm tracking-wide truncate">
-              Settings
+              Settings - v{import.meta.env.VITE_APP_VERSION}
             </span>
           </NavLink>
         </ul>
