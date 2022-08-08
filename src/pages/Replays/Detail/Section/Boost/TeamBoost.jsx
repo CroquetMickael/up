@@ -1,11 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { ReactECharts } from "../../../../../components/Charts/Charts";
 import { DataTitle } from "../../../../Home/components/DataTitle";
 import { dataByTeams } from "../../DetailChart";
 
-const TeamBoost = ({ gameInformation }) => (
+const TeamBoost = ({ gameInformation }) => {
+  const { t } = useTranslation();
+  return(
   <>
-    <DataTitle Title="Teams overview" />
+    <DataTitle Title={t('replay.replayDetail.teamsTitle')} />
     <div className="flex flex-wrap">
       <ReactECharts
         className="w-1/2"
@@ -20,7 +23,7 @@ const TeamBoost = ({ gameInformation }) => (
         option={dataByTeams({
           gameBlueValue: gameInformation?.blue?.stats?.boost?.avg_amount,
           gameOrangeValue: gameInformation?.orange?.stats?.boost?.avg_amount,
-          titles: ["Avg. Boost Amount"],
+          titles: [t("replay.replayDetail.charts.boost.avgBoost")],
         })}
       />
       <ReactECharts
@@ -34,7 +37,7 @@ const TeamBoost = ({ gameInformation }) => (
             gameInformation?.orange?.stats?.boost?.time_zero_boost,
             gameInformation?.orange?.stats?.boost?.time_full_boost,
           ],
-          titles: ["Seconds. with 0 boost", "Seconds with 100 boost"],
+          titles: [t("replay.replayDetail.charts.boost.noBoost"), t("replay.replayDetail.charts.boost.fullBoost")],
         })}
       />
       <ReactECharts
@@ -53,12 +56,12 @@ const TeamBoost = ({ gameInformation }) => (
             gameInformation?.orange?.stats?.boost?.count_stolen_small,
           ],
           titles: [
-            "Big pads",
-            "Stolen big pads",
-            "Small pads",
-            "Stolen small pads",
+            t("replay.replayDetail.charts.boost.pads.bigPads"),
+            t("replay.replayDetail.charts.boost.pads.stolenBigPads"),
+            t("replay.replayDetail.charts.boost.pads.smallPads"),
+            t("replay.replayDetail.charts.boost.pads.stolenSmallPads"),
           ],    
-          chartTitle: "Collected pads"
+          chartTitle: t("replay.replayDetail.charts.boost.pads.title")
         })}
       />
       <ReactECharts
@@ -73,14 +76,15 @@ const TeamBoost = ({ gameInformation }) => (
             gameInformation?.orange?.stats?.boost?.amount_overfill_stolen,
           ],
           titles: [
-            "Overfill total",
-            "Overfill from stolen",
+            t("replay.replayDetail.charts.boost.overfill.totalOverfill"),
+            t("replay.replayDetail.charts.boost.overfill.overfillStollen"),
           ],
-          chartTitle: "Overfill"
+          chartTitle: t("replay.replayDetail.charts.boost.overfill.title")
         })}
       />
     </div>
   </>
 );
+      }
 
 export { TeamBoost };
