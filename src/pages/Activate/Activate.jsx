@@ -4,6 +4,7 @@ import { useUser } from "../../context/UserContext";
 import { useDB } from "../../hooks/useDB";
 import { useHistory } from "react-router";
 import { useNotification } from "../../context/Notification/NotificationContext";
+import { Language } from "../../i18n/Language";
 
 const Activate = () => {
   const [apiKey, setApiKey] = useState("");
@@ -22,7 +23,8 @@ const Activate = () => {
         autoUpload: false,
         autoLaunch: false,
         path: "",
-        apiKey
+        apiKey,
+        lang: Language.EN
       };
       DBSet("user", userData);
       DBSave();

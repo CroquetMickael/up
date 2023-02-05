@@ -1,10 +1,12 @@
 import React from "react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { BsCardChecklist } from "react-icons/bs"
 
 
 const UploadList = ({ elements, retries }) => {
     const [isShowed, setIsShowed] = useState(false);
+    const { t } = useTranslation();
     return (
         <>
             <div className="fixed z-30 bottom-8 right-8">
@@ -12,7 +14,7 @@ const UploadList = ({ elements, retries }) => {
             </div>
             <div className={`fixed z-30 top-32 right-0 mt-12 mr-6 ${isShowed ? "toast" : "unShowed"}`}>
                 <div className="w-full bg-brandDarker text-sm text-white font-bold px-5 py-2 shadow border-b border-gray-300">
-                    Tracking replays
+                    {t("upload.trackingReplay")}
                 </div>
                 <div className="w-full h-full overflow-auto shadow bg-brandDarker" id="journal-scroll">
                     <table className="w-full">
@@ -23,15 +25,15 @@ const UploadList = ({ elements, retries }) => {
                                         <div className="leading-5 text-white font-medium">{element.name}</div>
                                         {retries.id === element.id && (
                                             <>
-                                                <div className="leading-5 text-white ">Retrieving data</div>
-                                                <div className="leading-5 text-white">Current retries: {retries.retryCount} / 10</div>
+                                                <div className="leading-5 text-white ">{t("upload.retrievingData")}</div>
+                                                <div className="leading-5 text-white">{t("upload.retries")} {retries.retryCount} / 10</div>
                                             </>
                                         )}
                                     </td>
                                 </tr>)
                             ) : <tr className="relative transform scale-100 text-xs py-1 border-b-1 w-full border-blue-100 cursor-default hover:bg-brandSub hover:bg-opacity-25">
                                 <td className="px-2 py-2 whitespace-no-wrap text-white">
-                                    No Data to retrieve
+                                    {t("upload.noData")}
                                 </td>
                             </tr>}
                         </tbody>
