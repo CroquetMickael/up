@@ -1,28 +1,26 @@
-  import React, { useState, useEffect } from "react";
-import { useDB } from "../../../hooks/useDB";
+import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const AutoUpload = ({ user, setUser }) => {
   const [path, setPath] = useState(user?.path);
-  const { DBSave, DBSet } = useDB();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (user?.path !== path) {
       setUser({ ...user, path: path });
-      DBSet("user", { ...user, path: path });
-      DBSave();
     }
-  }, [DBSave, DBSet, path, setUser, user]);
+  }, [path, setUser, user]);
 
   return (
     <div className="text-white ml-6 mt-8">
-      <h3 className="text-2xl">Automatic upload</h3>
+      <h3 className="text-2xl">{t("settings.autoUpload.title")}</h3>
       <div className="flex gap-8 mt-4">
         <div className="flex gap-8 justify-center items-center">
           <label
             htmlFor="autoUpload"
             className="mt-3 inline-flex items-center cursor-pointer"
           >
-            <span className="mr-3 text-sm">Enable</span>
+            <span className="mr-3 text-sm">{t("settings.enable")}</span>
             <span className="relative">
               <span className="block w-10 h-6 bg-brandDarker rounded-full shadow-inner"></span>
               <span
@@ -48,7 +46,7 @@ const AutoUpload = ({ user, setUser }) => {
         </div>
         <div className="w-full">
           <button className="relative z-10 cursor-pointer bg-brandSub hover:bg-brandSub text-white font-bold py-2 px-4 inline-flex items-center">
-            Choose path
+            {t("settings.autoUpload.path")}
             <input
               className="opacity-0 left-0 w-32 py-1 cursor-pointer absolute"
               type="file"
@@ -72,7 +70,7 @@ const AutoUpload = ({ user, setUser }) => {
             size={path?.length}
             value={path}
             disabled
-            placeholder="Choose a folder path"
+            placeholder={t('settings.autoUpload.pathFolder')}
           />
         </div>
       </div>

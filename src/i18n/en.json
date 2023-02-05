@@ -1,0 +1,86 @@
+{
+  "replay": {
+    "season": "season",
+    "games": "Games",
+    "replayDetail": {
+      "backButton": "Back to replay list",
+      "teams": "Teams",
+      "players": "Players",
+      "teamsTitle": "Teams overview",
+      "playersTitle": "Players overview",
+      "charts": {
+        "boost": {
+          "noBoost": "Secondes avec 0 boost",
+          "fullBoost": "Secondes avec 100 boost",
+          "avgBoost": "Quantité moyenne de boost",
+          "boostSupersonicTitle": "Boost used while supersonic",
+          "boostAmoutSupersonic": "Amout used while in supersonic",
+          "Timesboost": "Boost ranges",
+          "25Timesboost": "% of time. with boost 0-25",
+          "50Timesboost": "% of time. with boost 25-50",
+          "75Timesboost": "% of time. with boost 50-75",
+          "100Timesboost": "% of time. with boost 75-100",
+          "overfill": {
+            "title": "Overfill",
+            "totalOverfill": "Overfill total",
+            "overfillStollen": "Overfill from stolen"
+          },
+          "pads": {
+            "title": "Collected pads",
+            "bigPads": "Big pads",
+            "stolenBigPads": "Stolen big pads",
+            "smallPads": "Small pads",
+            "stolenSmallPads": "Stolen small pads",
+            "amountTitle": "Collected amounts",
+            "amountBigPads": "Amount collected (big pads)",
+            "amountStolenBigPads": "Amount stolen (big pads)",
+            "amountSmallPads": "Amout collected (small pads)",
+            "amountStolenSmallPads": "Amount stolen (small pads)"
+          }
+        },
+        "movement": {
+          "secondsAtSupersonicSpeed": "Seconds at supersonic speed",
+          "secondsAtBoostSpeed": "Seconds at boost speed",
+          "secondsAtSlowSpeed": "Seconds at slow speed",
+          "secondsAtGround": "Seconds at ground",
+          "secondsLowInAir": "Seconds low in air",
+          "secondsHighInAir": "Seconds high in air",
+          "powerSlideTotDuration": "Powerslide tot. duration",
+          "TotalTimePowerslide": "Total time of powerslide",
+          "PowerslideCount": "Number of powerslide",
+          "groundAir": "Ground/air",
+          "SpeedPercentageOfMaxSpeed": "Speed (% of max speed)",
+          "distanceTraveled": "Distance traveled",
+          "percentSupersonicSpeed": "% supersonic speed",
+          "percentBoostSpeed": "% boost speed",
+          "percentSlowSpeed": "% slow speed",
+          "percentOnGround": "% on ground",
+          "percentLowInAir": "% low in air",
+          "percentHighInAir": "% high in air",
+          "powerSlideAvgDuration": "Powerslide avg. duration",
+          "speed": "Speed"
+        }
+      }
+    }
+  },
+  "upload": {
+    "trackingReplay": "Tracking replays upload",
+    "noData": "No data to retrieve",
+    "retrievingData": "Retrieving data",
+    "retries": "Current retries:"
+  },
+  "settings": {
+    "title": "Settings",
+    "autoLaunch": "Auto Launch on startup",
+    "autoUpload": {
+      "title": "Automatic upload",
+      "path": "choose path",
+      "pathFolder": "Choose a folder path"
+    },
+    "enable": "Enable",
+    "Language": {
+      "title": "Choose your language"
+    }
+  },
+  "replays-retrieved": "Replays retrieved"
+}

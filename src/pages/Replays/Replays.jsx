@@ -5,6 +5,7 @@ import { FaSteam, FaPlaystation, FaXbox } from "react-icons/fa"
 import { SiEpicgames } from "react-icons/si"
 import { DataTitle } from "../Home/components/DataTitle";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const iconsByPlatform = {
     "steam": <FaSteam />,
@@ -26,6 +27,7 @@ const typeGames = (teamSize) => ({
 const Replays = () => {
     const { lastGames, comparedGames } = useReplays();
     const [games, setGames] = useState([]);
+    const { t } = useTranslation();
 
     useEffect(() => {
         setGames([...lastGames, ...comparedGames].sort((a, b) => new Date(b.date) - new Date(a.date)));
@@ -34,7 +36,7 @@ const Replays = () => {
     return (
         <>
             <div className="mx-auto max-w-4xl w-full">
-                <DataTitle Title="Games" />
+                <DataTitle Title={t("replay.games")} />
             </div>
             {games.map(game =>
                 <Link className="max-w-4xl w-full mx-auto z-10 transform transition-transform scale-95 hover:scale-100 cursor-pointer" to={`/replays/${game.id}`}>
@@ -57,7 +59,7 @@ const Replays = () => {
                                                 <div className="flex flex-wrap text-gray-400 my-1 w-full text-sm">
                                                     <div className="w-1/3 ">{game.map_name}</div>
                                                     <div className="w-1/3">{game.playlist_id ? typeGames(game.team_size)[game.playlist_id] : typeGames(game.team_size)[game.match_type]}</div>
-                                                    <div className="w-1/3">Season {game.season}</div>
+                                                    <div className="w-1/3">{t("replay.season")} {game.season}</div>
                                                 </div>
                                             </div>
                                         </div>

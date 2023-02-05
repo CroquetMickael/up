@@ -2,12 +2,12 @@
   "name": "up",
   "description": "your description",
   "author": "Haze",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "main": "./public/electron.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/CroquetMickael/up.git"
+    "type": "git",
+    "url": "https://github.com/CroquetMickael/up.git"
   },
   "dependencies": {
     "@lukeed/uuid": "^2.0.0",
@@ -20,8 +20,10 @@
     "echarts": "^5.2.0",
     "electron-devtools-installer": "^3.2.0",
     "electron-updater": "^4.3.9",
+    "i18next": "^21.8.16",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-i18next": "^11.18.3",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",

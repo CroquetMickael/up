@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { MdHome, MdFormatListBulleted, MdSettings } from "react-icons/md";
 
 import { NavLink } from "react-router-dom";
+import { useNotification } from "../../context/Notification/NotificationContext";
 
 const routes = [
   {
@@ -19,6 +21,7 @@ const routes = [
 ];
 
 const Sidebar = () => {
+  const { t } = useTranslation();
   return (
     <div className="fixed flex flex-col top-8 left-0 w-14 hover:w-64 bg-brandDarker dark:bg-gray-900 h-full text-white transition-all duration-300 border-none z-20 sidebar">
       <div className="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
@@ -52,7 +55,7 @@ const Sidebar = () => {
               <MdSettings />
             </span>
             <span className="ml-2 text-sm tracking-wide truncate">
-              Settings
+              {t("settings.title")} - v{import.meta.env.VITE_APP_VERSION}
             </span>
           </NavLink>
         </ul>

@@ -1,0 +1,86 @@
+{
+  "replay": {
+    "season": "saison",
+    "games": "Parties",
+    "replayDetail": {
+      "backButton": "Retour à la liste des replays",
+      "teams": "Equipes",
+      "players": "Joueurs",
+      "teamsTitle": "Présentation par équipe",
+      "playersTitle": "Présentation par joueur",
+      "charts": {
+        "boost": {
+          "noBoost": "Secondes avec 0 boost",
+          "fullBoost": "Secondes avec 100 boost",
+          "avgBoost": "Quantité moyenne de boost",
+          "boostSupersonicTitle": "Boost utilisé pendant le supersonic",
+          "boostAmoutSupersonic": "Quantité de boost utilisé pendant supersonic",
+          "Timesboost": "Plages de boost",
+          "25Timesboost": "% de temps avec boost entre 0-25",
+          "50Timesboost": "% de temps avec boost entre 25-50",
+          "75Timesboost": "% de temps avec boost entre 50-75",
+          "100Timesboost": "% de temps avec boost entre 75-100",
+          "overfill": {
+            "title": "Surplus de boost",
+            "totalOverfill": "Surplus de boost total",
+            "overfillStollen": "Surplus de boost volé"
+          },
+          "pads": {
+            "title": "Pads collecté",
+            "bigPads": "Gros pads",
+            "stolenBigPads": "Gros pads volé",
+            "smallPads": "Petit pads",
+            "stolenSmallPads": "Petit pads volé",
+            "amountTitle": "Quantité collecté",
+            "amountBigPads": "Quantité de de boost collecté (gros pads)",
+            "amountStolenBigPads": "Quantité de de boost volé (gros pads)",
+            "amountSmallPads": "Quantité de de boost collecté (petit pads)",
+            "amountStolenSmallPads": "Quantité de de boost volé (petit pads)"
+          }
+        },
+        "movement": {
+          "secondsAtSupersonicSpeed": "Secondes en vitesse supersonic",
+          "secondsAtBoostSpeed": "Seconde en vitesse boost",
+          "secondsAtSlowSpeed": "Secondes a vitesse lente",
+          "secondsAtGround": "Secondes au sol",
+          "secondsHighInAir": "Secondes haut en l'air",
+          "secondsLowInAir": "Secondes bas en l'air",
+          "TotalTimePowerslide": "Temps total de dérapage",
+          "powerSlideTotDuration": "Durée totale de dérapage",
+          "PowerslideCount": "Nombre de dérapage",
+          "groundAir": "Sol/Air",
+          "SpeedPercentageOfMaxSpeed": "Vitesse (% de la vitesse max)",
+          "distanceTraveled": "Distance",
+          "percentBoostSpeed": "% de vitesse boost",
+          "percentHighInAir": "% haut en l'air",
+          "percentLowInAir": "% bas en l'air",
+          "percentOnGround": "% au sol",
+          "percentSlowSpeed": "% vitesse lente",
+          "percentSupersonicSpeed": "% vitesse supersonic",
+          "powerSlideAvgDuration": "Temps moyen de dérapage",
+          "speed": "Vitesse"
+        }
+      }
+    }
+  },
+  "upload": {
+    "trackingReplay": "Suivi de l'envoie des rediffusions",
+    "noData": "Aucune donnée à récupérer",
+    "retrievingData": "Récupération des données",
+    "retries": "Tentatives en cours:"
+  },
+  "settings": {
+    "autoLaunch": "Lancement automatique au démarrage",
+    "autoUpload": {
+      "path": "choisir le chemin d'accès",
+      "title": "Upload automatique",
+      "pathFolder": "Choisir le dossier d'accès"
+    },
+    "enable": "Activé",
+    "title": "Paramètrages",
+    "Language": {
+      "title": "Choisissez votre langue"
+    }
+  },
+  "replays-retrieved": "Replays retrouvé"
+}
